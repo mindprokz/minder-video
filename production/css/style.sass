@@ -23,6 +23,14 @@
 @mixin thin()
   font-weight : 100
 
+$browser-context: 16
+@function em($pixels, $context: $browser-context)
+  @if (unitless($pixels))
+    $pixels: $pixels * 1px
+  @if (unitless($context))
+    $context: $context * 1px
+  @return $pixels / $context * 1em
+
 .clear
   +clear
 
@@ -47,6 +55,7 @@
 
 body
   font-family: "RobotoRegular", sans-serif
+  font-size: $browser-context * 1px
   padding : 0
   margin : 0
 
@@ -65,7 +74,7 @@ a
 
 //$font-size: 1vw
 $fz: 16pt
-$primary: #a6569b
+$primary: #872d85
 
 
 //*Index.html styles
@@ -338,3 +347,107 @@ footer
 @import "our_works"
 /*** Our Works styles ***/
 /************************/
+
+header#blog
+  padding: 8px
+  .logo, .name
+    display: inline-block
+  .logo
+    vertical-align: top
+  .name
+    border-right: 1px solid #b1b1b1
+    line-height: 1.2
+    padding: 10px 30px
+    p
+      font-size: $fz
+      margin: 0
+    h3
+      font-weight: bold
+      text-transform: uppercase
+      font-size: $fz
+      color: $primary
+      margin: 0
+  .blog_title
+    display: inline
+    line-height: 2
+    font-weight: bold
+  .speech_bubble
+    display: inline-block
+    vertical-align: top
+    margin-left: 5px
+#menu
+  background: $primary
+  a
+    color: #ffffff
+    line-height: 4.5
+    font-size: em(18px)
+    margin-left: 40px
+    border-bottom: 3px solid
+    padding-bottom: 5px
+    font-weight: bold
+    &:first-child
+      margin-left: 15px
+#page
+  padding: 20px
+  .slider
+    position: relative
+    border-radius: 5px
+    overflow: hidden
+    height: 415px
+    .favorite
+      position: absolute
+      margin: 10px 15px
+      img[alt="icons"]
+        width: initial
+        margin-top: -5px
+    img
+      width: 100%
+    .controllers
+      top: calc(50% - 40px)
+      position: absolute
+      width: 25px
+      height: 40px
+      cursor: pointer
+      path
+        fill: none
+        stroke-width: 3
+      &.right
+        right: 15px
+        & path
+          stroke: $primary
+      &.left
+        left: 15px
+        & path
+          stroke: #fff
+    .slider_title
+      position: absolute
+      bottom: 0
+      left: 0
+      color: #ffffff
+      margin: 0
+      width: 100%
+      font-size: em(20px)
+      padding: 30px
+      background: rgba(#2f2f2f, .75)
+      font-weight: bold
+  .latest_news
+    border-radius: 5px
+    border: 1px solid #dddddd
+    padding: 15px 25px
+    h1
+      font-weight: bold
+      font-size: em(25)
+      margin-top: 0
+      margin-bottom: 35px
+    .last_news_post
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 20px
+      .img_wrapper
+        display: inline-block
+        img
+          width: 100%
+      p
+        width: 70%
+        float: right
+        margin: 0

@@ -67,6 +67,7 @@
 
 body {
   font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
   padding: 0;
   margin: 0; }
 
@@ -183,7 +184,7 @@ nav {
 .form_section {
   color: #ffffff;
   text-transform: uppercase;
-  background: #a6569b;
+  background: #872d85;
   padding-top: 20px;
   text-align: center;
   padding-bottom: 20px; }
@@ -208,7 +209,7 @@ nav {
     transition: all 0.5s; }
     .form_section form button:hover {
       background: #ffffff;
-      color: #a6569b; }
+      color: #872d85; }
 
 .works {
   background: #ebebeb;
@@ -365,7 +366,7 @@ footer {
     border-bottom: 1px solid #e9e9e9; }
     .our_works_intro .content h1 {
       text-transform: uppercase;
-      color: #a6569b; }
+      color: #872d85; }
     .our_works_intro .content .tags ul {
       padding: 0; }
       .our_works_intro .content .tags ul li {
@@ -374,14 +375,14 @@ footer {
         display: inline-block;
         margin-top: 5px; }
         .our_works_intro .content .tags ul li:hover {
-          border-color: #a6569b; }
+          border-color: #872d85; }
         .our_works_intro .content .tags ul li a {
           display: inline-block;
           font-size: 12pt;
           font-weight: bold;
           padding: 1px 10px; }
           .our_works_intro .content .tags ul li a.active, .our_works_intro .content .tags ul li a:hover {
-            color: #a6569b; }
+            color: #872d85; }
 
 .works_blocks {
   margin-bottom: 60px; }
@@ -417,6 +418,7 @@ footer {
           margin-top: -30px; }
       .works_blocks .no-padding .work_block .hover_eff {
         background: rgba(80, 0, 95, 0.5);
+        cursor: pointer;
         position: absolute;
         text-align: center;
         top: 0;
@@ -459,5 +461,110 @@ footer {
 
 /*** Our Works styles ** */
 /*********************** */
+header#blog {
+  padding: 8px; }
+  header#blog .logo, header#blog .name {
+    display: inline-block; }
+  header#blog .logo {
+    vertical-align: top; }
+  header#blog .name {
+    border-right: 1px solid #b1b1b1;
+    line-height: 1.2;
+    padding: 10px 30px; }
+    header#blog .name p {
+      font-size: 16pt;
+      margin: 0; }
+    header#blog .name h3 {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16pt;
+      color: #872d85;
+      margin: 0; }
+  header#blog .blog_title {
+    display: inline;
+    line-height: 2;
+    font-weight: bold; }
+  header#blog .speech_bubble {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px; }
+
+#menu {
+  background: #872d85; }
+  #menu a {
+    color: #ffffff;
+    line-height: 4.5;
+    font-size: 1.125em;
+    margin-left: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    font-weight: bold; }
+    #menu a:first-child {
+      margin-left: 15px; }
+
+#page {
+  padding: 20px; }
+  #page .slider {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 415px; }
+    #page .slider .favorite {
+      position: absolute;
+      margin: 10px 15px; }
+      #page .slider .favorite img[alt="icons"] {
+        width: initial;
+        margin-top: -5px; }
+    #page .slider img {
+      width: 100%; }
+    #page .slider .controllers {
+      top: calc(50% - 40px);
+      position: absolute;
+      width: 25px;
+      height: 40px;
+      cursor: pointer; }
+      #page .slider .controllers path {
+        fill: none;
+        stroke-width: 3; }
+      #page .slider .controllers.right {
+        right: 15px; }
+        #page .slider .controllers.right path {
+          stroke: #872d85; }
+      #page .slider .controllers.left {
+        left: 15px; }
+        #page .slider .controllers.left path {
+          stroke: #fff; }
+    #page .slider .slider_title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #ffffff;
+      margin: 0;
+      width: 100%;
+      font-size: 1.25em;
+      padding: 30px;
+      background: rgba(47, 47, 47, 0.75);
+      font-weight: bold; }
+  #page .latest_news {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    padding: 15px 25px; }
+    #page .latest_news h1 {
+      font-weight: bold;
+      font-size: 1.5625em;
+      margin-top: 0;
+      margin-bottom: 35px; }
+    #page .latest_news .last_news_post {
+      margin-bottom: 30px; }
+      #page .latest_news .last_news_post:last-child {
+        margin-bottom: 20px; }
+      #page .latest_news .last_news_post .img_wrapper {
+        display: inline-block; }
+        #page .latest_news .last_news_post .img_wrapper img {
+          width: 100%; }
+      #page .latest_news .last_news_post p {
+        width: 70%;
+        float: right;
+        margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
