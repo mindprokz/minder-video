@@ -1,0 +1,340 @@
+@import mail
+
+@font-face
+  font-family: "RobotoRegular"
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot")
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff")
+  src: url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@mixin clear()
+  &:after
+    content : ''
+    display : table
+    clear : both
+
+@mixin bold()
+  font-weight : 700
+
+@mixin light()
+  font-weight : 300
+
+@mixin thin()
+  font-weight : 100
+
+.clear
+  +clear
+
+*::-webkit-input-placeholder
+  color: #fff
+  opacity: 1
+*:-moz-placeholder
+  color: #fff
+  opacity: 1
+*::-moz-placeholder
+  color: #fff
+  opacity: 1
+*:-ms-input-placeholder
+  color: #fff
+  opacity: 1
+*::selection
+  background: rgba(#a6569b, .7)
+  color: #ffffff
+
+*
+  box-sizing : border-box
+
+body
+  font-family: "RobotoRegular", sans-serif
+  padding : 0
+  margin : 0
+
+h1,h2,h3,h4,h5,h6
+  -webkit-margin-before : 0
+  -webkit-margin-after : 0
+  -webkit-padding-start : 0
+  font-weight : 400
+  margin : 0
+
+a
+  color: inherit
+  text-decoration : none
+  &:hover
+    color: inherit
+
+//$font-size: 1vw
+$fz: 16pt
+$primary: #a6569b
+
+
+//*Index.html styles
+
+
+
+//Navigation styles
+nav
+  background: #242424
+  padding-bottom: 10px
+  width: 100%
+  .menu
+    a
+      color: #ffd302
+      border-bottom: 3px solid
+      font-weight: bold
+      padding-bottom: 2px
+      display: inline-block
+      margin-top: 15px
+      font-size: $fz
+      margin-left: 15px
+      &:hover,
+      &.active
+        color: #ffffff
+  .phone
+    text-align: center
+    p
+      color: #ffffff
+      font-size: $fz + 8
+      margin: 0
+    a
+      border-bottom: 1px dotted
+      color: #ffd302
+  .email
+    text-align: center
+    p
+      color: #ffffff
+      font-size: $fz - 4
+      margin: 10px 0
+    a
+      color: #ffd302
+      border-bottom: 1px solid
+      font-size: $fz - 3
+//slogo styles
+.intro,
+.reviews_intro,
+.our_works_intro
+  background: #ececec
+  padding: 0 5%
+  .logo
+    a
+      display: inline-block
+      float: left
+      margin: 10px
+  .name
+    border-right: 1px solid #b1b1b1
+    line-height: 1.2
+    margin-top: 10px
+    padding-bottom: 10px
+    padding-top: 10px
+    p
+      display: inline
+      margin: 0 20px
+      font-size: $fz
+    h3
+      display: inline
+      font-weight: bold
+      text-transform: uppercase
+      font-size: $fz
+      margin: 0 20px
+      color: #872d85
+  .slogan
+    font-weight: bold
+    font-size: $fz + 8
+//main page styles
+.main-page
+  background: #f4f4f4
+  padding-bottom: 55px
+  ul
+    padding-top: 55px
+    list-style-image: url(../img/marker.png)
+    li
+      padding-bottom: 30px
+      padding-left: 45px
+      font-weight: bold
+      a
+        color: #1a75aa
+        border-bottom: 2px solid rgba(#1a75aa, .5)
+        font-size: $fz + 2
+        padding-bottom: 7px
+        &:hover
+          color: #000000
+  .video
+    margin-top: 55px
+    img
+      width: 100%
+//form style
+.form_section
+  color: #ffffff
+  text-transform: uppercase
+  background: $primary
+  padding-top: 20px
+  text-align: center
+  padding-bottom: 20px
+  h3
+    font-size: $fz + 18
+    padding-bottom: 25px
+  form
+    input, button
+      margin-left: 30px
+      border: 1px solid #fff
+      border-radius: 15px
+      background-color: transparent
+      padding-left: 15px
+      padding-right: 15px
+      width: 170px
+      height: 40px
+      &:focus
+        outline: none
+    button
+      border: 2px solid #fff
+      font-weight: bold
+      text-transform: uppercase
+      transition: all .5s
+      &:hover
+        background: #ffffff
+        color: $primary
+
+//works styles
+.works
+  background: #ebebeb
+  padding: 35px 0 10px 0
+  h1
+    text-align: center
+    font-weight: bold
+    font-size: $fz + 16
+  .section
+    margin-left: 5%
+    padding-bottom: 60px
+    .title
+      padding-right: 5%
+      &>h3
+        color: #2d2d2d
+        font-size: $fz + 8
+        font-weight: bold
+        display: inline
+        padding: 0 35px 0 15px
+      &>a
+        border-bottom: 1px solid
+        color: #1a75aa
+        float: right
+        font-size: $fz
+        font-weight: bold
+        padding-top: 5px
+        &:hover
+          color: #000000
+    .work_video
+      margin: 15px
+      float: left
+      padding: 10px
+      width: 270px
+      background: #ffffff
+      text-align: center
+      a
+        display: block
+        position: relative
+        overflow: hidden
+        margin-bottom: 10px
+        height: 165px
+        img[alt="poster"]
+          width: 100%
+        img[alt="play"]
+          position: absolute
+          top: 50%
+          left: 50%
+          cursor: pointer
+          transform: translate( -50%, -50%)
+          transition: .5s all
+          &:hover
+            transform: translate( -50%, -50%) scale(1.2)
+      h3
+        font-size: $fz - 4
+        font-weight: bold
+        margin: 15px auto
+//reviews styles
+.reviews
+  background: #dcdcdc
+  text-align: center
+  padding: 35px 0 55px 0
+  h1
+    font-size: $fz + 16
+    font-weight: bold
+  h2
+    text-align: left
+    font-size: $fz + 20
+    margin-left: 26px
+  .review
+    border-bottom: 1px solid #d0d0d0
+    padding-bottom: 45px
+    padding-top: 45px
+    &:last-child
+      border-bottom: 0
+  .review-text
+    text-align: left
+    .link_label
+      font-weight: bold
+      font-size: $fz
+      margin-bottom: 5px
+      margin-top: 10px
+    a
+      border-bottom: 2px solid
+      color: #008cc0
+      font-size: $fz
+  .reviews_video,
+  .reviews_video_big
+    margin: 15px
+    float: left
+    padding: 10px
+    width: 330px
+    background: #ffffff
+    a
+      display: block
+      position: relative
+      overflow: hidden
+      margin-bottom: 25px
+      height: 165px
+      img[alt="poster"]
+        width: 100%
+      img[alt="play"]
+        position: absolute
+        top: 50%
+        left: 50%
+        cursor: pointer
+        transform: translate( -50%, -50%)
+        transition: .5s all
+        &:hover
+          transform: translate( -50%, -50%) scale(1.2)
+    h3
+      font-size: $fz - 2
+      font-weight: bold
+      padding-bottom: 15px
+    h4
+      font-size: $fz - 4
+      font-weight: bold
+      padding-bottom: 10px
+    p
+      font-size: $fz - 5
+      margin: 0
+      padding-bottom: 15px
+  .reviews_video_big
+    width: 365px
+
+//footer styles
+footer
+  background: #ebebeb
+  padding: 20px 0
+  +clear
+  .bottom-logo
+    padding-top: 10px
+    font-size: $fz - 4
+    line-height: 2
+  .bottom-contacts
+    font-size: $fz - 4
+  .bottom-logo-create
+    line-height: 2
+
+
+/*** Our Works styles ***/
+/************************/
+@import "our_works"
+/*** Our Works styles ***/
+/************************/

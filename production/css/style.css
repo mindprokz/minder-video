@@ -1,0 +1,463 @@
+#mail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); }
+  #mail .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px; }
+    #mail .message img {
+      width: 150px;
+      height: 150px; }
+    #mail .message .message_text {
+      float: right;
+      padding-left: 25px;
+      padding-top: 30px; }
+      #mail .message .message_text h3 {
+        font-size: 25pt;
+        font-weight: 300;
+        color: #0f0f0f; }
+      #mail .message .message_text p {
+        font-size: 11pt; }
+
+.not_visible_mail {
+  display: none; }
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff");
+  src: url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+*::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*::selection {
+  background: rgba(166, 86, 155, 0.7);
+  color: #ffffff; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+  font-weight: 400;
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: inherit; }
+
+nav {
+  background: #242424;
+  padding-bottom: 10px;
+  width: 100%; }
+  nav .menu a {
+    color: #ffd302;
+    border-bottom: 3px solid;
+    font-weight: bold;
+    padding-bottom: 2px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 16pt;
+    margin-left: 15px; }
+    nav .menu a:hover, nav .menu a.active {
+      color: #ffffff; }
+  nav .phone {
+    text-align: center; }
+    nav .phone p {
+      color: #ffffff;
+      font-size: 24pt;
+      margin: 0; }
+    nav .phone a {
+      border-bottom: 1px dotted;
+      color: #ffd302; }
+  nav .email {
+    text-align: center; }
+    nav .email p {
+      color: #ffffff;
+      font-size: 12pt;
+      margin: 10px 0; }
+    nav .email a {
+      color: #ffd302;
+      border-bottom: 1px solid;
+      font-size: 13pt; }
+
+.intro,
+.reviews_intro,
+.our_works_intro {
+  background: #ececec;
+  padding: 0 5%; }
+  .intro .logo a,
+  .reviews_intro .logo a,
+  .our_works_intro .logo a {
+    display: inline-block;
+    float: left;
+    margin: 10px; }
+  .intro .name,
+  .reviews_intro .name,
+  .our_works_intro .name {
+    border-right: 1px solid #b1b1b1;
+    line-height: 1.2;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .intro .name p,
+    .reviews_intro .name p,
+    .our_works_intro .name p {
+      display: inline;
+      margin: 0 20px;
+      font-size: 16pt; }
+    .intro .name h3,
+    .reviews_intro .name h3,
+    .our_works_intro .name h3 {
+      display: inline;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16pt;
+      margin: 0 20px;
+      color: #872d85; }
+  .intro .slogan,
+  .reviews_intro .slogan,
+  .our_works_intro .slogan {
+    font-weight: bold;
+    font-size: 24pt; }
+
+.main-page {
+  background: #f4f4f4;
+  padding-bottom: 55px; }
+  .main-page ul {
+    padding-top: 55px;
+    list-style-image: url(../img/marker.png); }
+    .main-page ul li {
+      padding-bottom: 30px;
+      padding-left: 45px;
+      font-weight: bold; }
+      .main-page ul li a {
+        color: #1a75aa;
+        border-bottom: 2px solid rgba(26, 117, 170, 0.5);
+        font-size: 18pt;
+        padding-bottom: 7px; }
+        .main-page ul li a:hover {
+          color: #000000; }
+  .main-page .video {
+    margin-top: 55px; }
+    .main-page .video img {
+      width: 100%; }
+
+.form_section {
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #a6569b;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px; }
+  .form_section h3 {
+    font-size: 34pt;
+    padding-bottom: 25px; }
+  .form_section form input, .form_section form button {
+    margin-left: 30px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 170px;
+    height: 40px; }
+    .form_section form input:focus, .form_section form button:focus {
+      outline: none; }
+  .form_section form button {
+    border: 2px solid #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s; }
+    .form_section form button:hover {
+      background: #ffffff;
+      color: #a6569b; }
+
+.works {
+  background: #ebebeb;
+  padding: 35px 0 10px 0; }
+  .works h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32pt; }
+  .works .section {
+    margin-left: 5%;
+    padding-bottom: 60px; }
+    .works .section .title {
+      padding-right: 5%; }
+      .works .section .title > h3 {
+        color: #2d2d2d;
+        font-size: 24pt;
+        font-weight: bold;
+        display: inline;
+        padding: 0 35px 0 15px; }
+      .works .section .title > a {
+        border-bottom: 1px solid;
+        color: #1a75aa;
+        float: right;
+        font-size: 16pt;
+        font-weight: bold;
+        padding-top: 5px; }
+        .works .section .title > a:hover {
+          color: #000000; }
+    .works .section .work_video {
+      margin: 15px;
+      float: left;
+      padding: 10px;
+      width: 270px;
+      background: #ffffff;
+      text-align: center; }
+      .works .section .work_video a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+        height: 165px; }
+        .works .section .work_video a img[alt="poster"] {
+          width: 100%; }
+        .works .section .work_video a img[alt="play"] {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          cursor: pointer;
+          transform: translate(-50%, -50%);
+          transition: 0.5s all; }
+          .works .section .work_video a img[alt="play"]:hover {
+            transform: translate(-50%, -50%) scale(1.2); }
+      .works .section .work_video h3 {
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 15px auto; }
+
+.reviews {
+  background: #dcdcdc;
+  text-align: center;
+  padding: 35px 0 55px 0; }
+  .reviews h1 {
+    font-size: 32pt;
+    font-weight: bold; }
+  .reviews h2 {
+    text-align: left;
+    font-size: 36pt;
+    margin-left: 26px; }
+  .reviews .review {
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 45px;
+    padding-top: 45px; }
+    .reviews .review:last-child {
+      border-bottom: 0; }
+  .reviews .review-text {
+    text-align: left; }
+    .reviews .review-text .link_label {
+      font-weight: bold;
+      font-size: 16pt;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+    .reviews .review-text a {
+      border-bottom: 2px solid;
+      color: #008cc0;
+      font-size: 16pt; }
+  .reviews .reviews_video,
+  .reviews .reviews_video_big {
+    margin: 15px;
+    float: left;
+    padding: 10px;
+    width: 330px;
+    background: #ffffff; }
+    .reviews .reviews_video a,
+    .reviews .reviews_video_big a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 25px;
+      height: 165px; }
+      .reviews .reviews_video a img[alt="poster"],
+      .reviews .reviews_video_big a img[alt="poster"] {
+        width: 100%; }
+      .reviews .reviews_video a img[alt="play"],
+      .reviews .reviews_video_big a img[alt="play"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        transition: 0.5s all; }
+        .reviews .reviews_video a img[alt="play"]:hover,
+        .reviews .reviews_video_big a img[alt="play"]:hover {
+          transform: translate(-50%, -50%) scale(1.2); }
+    .reviews .reviews_video h3,
+    .reviews .reviews_video_big h3 {
+      font-size: 14pt;
+      font-weight: bold;
+      padding-bottom: 15px; }
+    .reviews .reviews_video h4,
+    .reviews .reviews_video_big h4 {
+      font-size: 12pt;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    .reviews .reviews_video p,
+    .reviews .reviews_video_big p {
+      font-size: 11pt;
+      margin: 0;
+      padding-bottom: 15px; }
+  .reviews .reviews_video_big {
+    width: 365px; }
+
+footer {
+  background: #ebebeb;
+  padding: 20px 0; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer .bottom-logo {
+    padding-top: 10px;
+    font-size: 12pt;
+    line-height: 2; }
+  footer .bottom-contacts {
+    font-size: 12pt; }
+  footer .bottom-logo-create {
+    line-height: 2; }
+
+/*** Our Works styles ** */
+/*********************** */
+.our_works_intro {
+  background: #ffffff;
+  margin-bottom: 25px; }
+  .our_works_intro .content {
+    border-bottom: 1px solid #e9e9e9; }
+    .our_works_intro .content h1 {
+      text-transform: uppercase;
+      color: #a6569b; }
+    .our_works_intro .content .tags ul {
+      padding: 0; }
+      .our_works_intro .content .tags ul li {
+        border-radius: 8px;
+        border: 1px solid #ebebeb;
+        display: inline-block;
+        margin-top: 5px; }
+        .our_works_intro .content .tags ul li:hover {
+          border-color: #a6569b; }
+        .our_works_intro .content .tags ul li a {
+          display: inline-block;
+          font-size: 12pt;
+          font-weight: bold;
+          padding: 1px 10px; }
+          .our_works_intro .content .tags ul li a.active, .our_works_intro .content .tags ul li a:hover {
+            color: #a6569b; }
+
+.works_blocks {
+  margin-bottom: 60px; }
+  .works_blocks .align {
+    margin-top: -225px; }
+  .works_blocks .no-padding {
+    padding: 0; }
+    .works_blocks .no-padding .work_block {
+      position: relative;
+      overflow: hidden;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      height: 0; }
+      .works_blocks .no-padding .work_block img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .works_blocks .no-padding .work_block.big {
+        padding-bottom: 67.1%; }
+        .works_blocks .no-padding .work_block.big .hover_eff h3 {
+          font-size: 24px;
+          margin-top: -20px; }
+      .works_blocks .no-padding .work_block.small {
+        padding-bottom: 62.2%; }
+        .works_blocks .no-padding .work_block.small .hover_eff h3 {
+          font-size: 16px;
+          margin-top: -50px; }
+        .works_blocks .no-padding .work_block.small .hover_eff h5, .works_blocks .no-padding .work_block.small .hover_eff p {
+          font-size: 12px; }
+        .works_blocks .no-padding .work_block.small .hover_eff:hover h3 {
+          margin-top: -30px; }
+      .works_blocks .no-padding .work_block .hover_eff {
+        background: rgba(80, 0, 95, 0.5);
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 25% 25px 25px 25px;
+        transition: all 0.5s ease-out;
+        opacity: 0;
+        color: #ffffff; }
+        .works_blocks .no-padding .work_block .hover_eff:hover {
+          opacity: 1; }
+          .works_blocks .no-padding .work_block .hover_eff:hover h3, .works_blocks .no-padding .work_block .hover_eff:hover h5, .works_blocks .no-padding .work_block .hover_eff:hover p {
+            margin-top: 0;
+            opacity: 1; }
+          .works_blocks .no-padding .work_block .hover_eff:hover .white_line {
+            margin: 8px auto;
+            opacity: 1; }
+        .works_blocks .no-padding .work_block .hover_eff h3 {
+          opacity: 0;
+          transition: all 0.2s ease-in;
+          font-weight: bold; }
+        .works_blocks .no-padding .work_block .hover_eff h5 {
+          font-size: 14px;
+          opacity: 0;
+          margin-top: -20px;
+          transition: all 0.3s ease-in 0.2s; }
+        .works_blocks .no-padding .work_block .hover_eff .white_line {
+          width: 30%;
+          height: 3px;
+          background: #fff;
+          opacity: 0;
+          margin: -20px auto;
+          transition: all 0.3s ease-in 0.5s; }
+        .works_blocks .no-padding .work_block .hover_eff p {
+          font-size: 14px;
+          margin-top: 20px;
+          opacity: 0;
+          transition: all 0.3s ease-in 0.8s; }
+
+/*** Our Works styles ** */
+/*********************** */
+
+/*# sourceMappingURL=style.css.map */
