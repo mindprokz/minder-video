@@ -34,18 +34,6 @@ $browser-context: 16
 .clear
   +clear
 
-*::-webkit-input-placeholder
-  color: #fff
-  opacity: 1
-*:-moz-placeholder
-  color: #fff
-  opacity: 1
-*::-moz-placeholder
-  color: #fff
-  opacity: 1
-*:-ms-input-placeholder
-  color: #fff
-  opacity: 1
 *::selection
   background: rgba(#a6569b, .7)
   color: #ffffff
@@ -194,6 +182,14 @@ nav
       height: 40px
       &:focus
         outline: none
+      &::-webkit-input-placeholder
+        color: #ffffff
+      &:-moz-placeholder
+        color: #ffffff
+      &::-moz-placeholder
+        color: #ffffff
+      &:-ms-input-placeholder
+        color: #ffffff
     button
       border: 2px solid #fff
       font-weight: bold
@@ -509,7 +505,7 @@ header#blog
         color: #ffffff
   #breadcrumps
     padding-left: 1%
-    color: #383838
+    color: #757575
     font-size: em(18)
     a
       &.active
@@ -581,3 +577,61 @@ header#blog
         border-radius: 5px
         &.active
           border: 2px solid lighten($primary, 30%)
+#news_full
+  h1
+    color: #333333
+    font-size: em(20)
+    margin-bottom: 40px
+  .news_body
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+    .bottom_statistics
+      position: absolute
+      width: 100%
+      color: #ffffff
+      background: rgba(#2f2f2f, .75)
+      bottom: 0
+      line-height: 3
+      padding: 0 30px
+      font-size: em(15)
+      .comments, .views
+        float: right
+      .views
+        margin-right: 15px
+  #subscribe
+    background: #ececec
+    border-radius: 5px
+    padding: 20px
+    margin-top: 20px
+    h1
+      font-weight: bold
+      color: #363636
+      font-size: em(18)
+      margin-bottom: auto
+    p
+      color: #6d6d6d
+      font-size: em(15)
+      margin-bottom: 35px
+    form
+      text-align: center
+      input
+        font-size: em(15)
+        margin: 15px auto
+        width: 100%
+        line-height: 2
+        padding: 0 15px
+        border: 1px solid #d0d0d0
+        border-radius: 5px
+      button
+        margin: 15px auto
+        font-weight: bold
+        text-transform: uppercase
+        color: $primary
+        border: 1px solid #d0d0d0
+        border-radius: 5px
+        background-color: transparent
+        line-height: 2
+        padding: 0 15px
+        font-size: em(15)
