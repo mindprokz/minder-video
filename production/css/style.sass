@@ -349,6 +349,7 @@ footer
 /************************/
 
 header#blog
+  background: #f6f6f6
   padding: 8px
   .logo, .name
     display: inline-block
@@ -388,12 +389,13 @@ header#blog
     &:first-child
       margin-left: 15px
 #page
+  background: #f6f6f6
   padding: 20px
   .slider
     position: relative
     border-radius: 5px
     overflow: hidden
-    height: 415px
+    height: 408px
     .favorite
       position: absolute
       margin: 10px 15px
@@ -439,10 +441,12 @@ header#blog
       font-size: em(25)
       margin-top: 0
       margin-bottom: 35px
+    a:hover p
+      text-decoration: underline
     .last_news_post
-      margin-bottom: 30px
+      margin-bottom: 35px
       &:last-child
-        margin-bottom: 20px
+        margin-bottom: 25px
       .img_wrapper
         display: inline-block
         img
@@ -451,3 +455,129 @@ header#blog
         width: 70%
         float: right
         margin: 0
+        color: #393939
+  #news
+    margin: 20px 0
+    +clear()
+    a:hover .news_block p
+      text-decoration: underline
+    .news_block
+      background: #ffffff
+      padding: 10px
+      border-radius: 5px
+      border: 1px solid #e6e6e6
+      margin-bottom: 20px
+      img[alt="news"]
+        margin-bottom: 15px
+        width: 100%
+      .date, .comments, .views
+        color: #a7a7a7
+        font-size: em(15)
+        i
+          display: inline-block
+          width: 20px
+          height: 20px
+          vertical-align: bottom
+          background: url(../img/blog/news_icons.png) no-repeat
+          margin-right: 5px
+      .comments, .views
+        float: right
+      .date i
+        background-position: 2px
+      .comments i
+        background-position: -16px
+      .views
+        margin-right: 10px
+        i
+          background-position: -34px
+      p
+        padding: 0 15px
+        color: #333333
+  #load_more
+    text-align: center
+    margin: 50px auto
+    button
+      color: #636363
+      font-size: em(18)
+      border-radius: 15px
+      border: 2px solid lighten($primary, 30%)
+      background: transparent
+      padding: 5px 15px
+      transition: all .5s
+      &:hover
+        background: lighten($primary, 30%)
+        color: #ffffff
+  #breadcrumps
+    padding-left: 1%
+    color: #383838
+    font-size: em(18)
+    a
+      &.active
+        color: $primary
+        text-decoration: underline
+      &:hover
+        text-decoration: underline
+    span
+      margin: 0 15px
+  #page_num
+    margin: 0 40px
+    +clear()
+    #prev, #next
+      color: #9c9c9c
+      line-height: 2
+      &:hover
+        color: #000000
+        text-decoration: underline
+        & span
+          background: #000000
+      span
+        width: 25px
+        height: 2px
+        background: #9c9c9c
+        top: 50%
+        position: absolute
+    #prev
+      float: right
+      span
+        left: 10px
+        &::before
+          content: ''
+          position: absolute
+          bottom: -4px
+          left: -2px
+          border-right: 10px solid #9c9c9c
+          border-top: 5px solid transparent
+          border-bottom: 5px solid transparent
+          border-left: 0
+          width: 10px
+          height: 10px
+      &:hover span::before
+        border-right-color: #000000
+    #next
+      span
+        right: 10px
+        &::after
+          content: ''
+          position: absolute
+          bottom: -4px
+          right: -2px
+          border-left: 10px solid #9c9c9c
+          border-top: 5px solid transparent
+          border-bottom: 5px solid transparent
+          border-right: 0
+          width: 10px
+          height: 10px
+      &:hover span::after
+        border-left-color: #000000
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      text-align: center
+      li
+        display: inline-block
+        padding: 5px 10px
+        border: 1px solid #9c9c9c
+        border-radius: 5px
+        &.active
+          border: 2px solid lighten($primary, 30%)
