@@ -10,18 +10,19 @@ header#blog
     line-height: 1.2
     padding: 10px 30px
     p
-      font-size: $fz
+      font-family: "RobotoLight", sans-serif
+      font-size: em(20)
       margin: 0
     h3
-      font-weight: bold
+      font-family: "RobotoBold", sans-serif
       text-transform: uppercase
-      font-size: $fz
+      font-size: em(20)
       color: $primary
       margin: 0
   .blog_title
     display: inline
     line-height: 2
-    font-weight: bold
+    font-family: "RobotoBold", sans-serif
   .speech_bubble
     display: inline-block
     vertical-align: top
@@ -31,11 +32,11 @@ header#blog
   a
     color: #ffffff
     line-height: 4.5
-    font-size: em(18px)
+    font-size: em(18)
     margin-left: 40px
     border-bottom: 3px solid
     padding-bottom: 5px
-    font-weight: bold
+    font-family: "RobotoBold", sans-serif
     &:first-child
       margin-left: 15px
 #page
@@ -47,6 +48,7 @@ header#blog
     overflow: hidden
     height: 408px
     .favorite
+      color: #353535
       position: absolute
       margin: 10px 15px
       img[alt="icons"]
@@ -78,19 +80,20 @@ header#blog
       color: #ffffff
       margin: 0
       width: 100%
-      font-size: em(20px)
+      font-size: em(20)
       padding: 30px
       background: rgba(#2f2f2f, .75)
-      font-weight: bold
+      font-family: "RobotoBold", sans-serif
   .latest_news
     border-radius: 5px
     border: 1px solid #dddddd
     padding: 15px 25px
     h1
-      font-weight: bold
+      font-family: "RobotoBold", sans-serif
       font-size: em(25)
       margin-top: 0
       margin-bottom: 35px
+      color: #393939
     a:hover p
       text-decoration: underline
     .last_news_post
@@ -102,6 +105,7 @@ header#blog
         img
           width: 100%
       p
+        font-family: "RobotoLight", sans-serif
         width: 70%
         float: right
         margin: 0
@@ -148,6 +152,7 @@ header#blog
     margin: 50px auto
     button
       color: #636363
+      font-family: "RobotoLight", sans-serif
       font-size: em(18)
       border-radius: 15px
       border: 2px solid lighten($primary, 30%)
@@ -160,7 +165,7 @@ header#blog
   #breadcrumps
     padding-left: 1%
     color: #757575
-    font-size: em(18)
+    font-size: em(15)
     a
       &.active
         color: $primary
@@ -226,10 +231,10 @@ header#blog
       text-align: center
       li
         display: inline-block
-        padding: 5px 10px
+        padding: 2px 8px
         border: 1px solid #9c9c9c
         border-radius: 5px
         &.active
           border: 2px solid lighten($primary, 30%)
 
-@import "news_full"
+@import "blog_news_full"

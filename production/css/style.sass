@@ -2,9 +2,23 @@
 
 @font-face
   font-family: "RobotoRegular"
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot")
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("embedded-opentype")
   src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff")
   src: url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+@font-face
+  font-family: "RobotoLight"
+  src: url("../fonts/RobotoLight/RobotoLight.eot") format("embedded-opentype")
+  src: url("../fonts/RobotoLight/RobotoLight.woff") format("woff")
+  src: url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+@font-face
+  font-family: "RobotoBold"
+  src: url("../fonts/RobotoBold/RobotoBold.eot") format("embedded-opentype")
+  src: url("../fonts/RobotoBold/RobotoBold.woff") format("woff")
+  src: url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype")
   font-style: normal
   font-weight: normal
 
@@ -60,14 +74,12 @@ a
   &:hover
     color: inherit
 
+strong
+  font-family: "RobotoBold", sans-serif
+
 //$font-size: 1vw
 $fz: 16pt
 $primary: #872d85
-
-
-//*Index.html styles
-
-
 
 //Navigation styles
 nav
@@ -76,37 +88,41 @@ nav
   width: 100%
   .menu
     a
+      font-family: "RobotoBold", sans-serif
       color: #ffd302
       border-bottom: 3px solid
-      font-weight: bold
       padding-bottom: 2px
       display: inline-block
-      margin-top: 15px
-      font-size: $fz
+      margin-top: 20px
+      font-size: em(18)
       margin-left: 15px
       &:hover,
       &.active
         color: #ffffff
   .phone
     text-align: center
+    margin-top: 5px
     p
       color: #ffffff
-      font-size: $fz + 8
+      font-size: em(24)
       margin: 0
     a
       border-bottom: 1px dotted
       color: #ffd302
+      font-size: em(14)
   .email
     text-align: center
+    margin-top: 10px
     p
       color: #ffffff
-      font-size: $fz - 4
-      margin: 10px 0
+      font-size: em(13)
+      margin: 5px 0
+      text-transform: uppercase
     a
       color: #ffd302
       border-bottom: 1px solid
-      font-size: $fz - 3
-//slogo styles
+      font-size: em(17)
+//intro styles
 .intro,
 .reviews_intro,
 .our_works_intro
@@ -124,19 +140,20 @@ nav
     padding-bottom: 10px
     padding-top: 10px
     p
+      font-family: "RobotoLight", sans-serif
       display: inline
       margin: 0 20px
-      font-size: $fz
+      font-size: em(20)
     h3
+      font-family: "RobotoBold", sans-serif
       display: inline
-      font-weight: bold
       text-transform: uppercase
-      font-size: $fz
+      font-size: em(20)
       margin: 0 20px
       color: #872d85
   .slogan
-    font-weight: bold
-    font-size: $fz + 8
+    font-family: "RobotoBold", sans-serif
+    font-size: em(30)
 //main page styles
 .main-page
   background: #f4f4f4
@@ -147,14 +164,17 @@ nav
     li
       padding-bottom: 30px
       padding-left: 45px
-      font-weight: bold
+      font-family: "RobotoBold", sans-serif
       a
         color: #1a75aa
         border-bottom: 2px solid rgba(#1a75aa, .5)
-        font-size: $fz + 2
+        font-size: em(19)
         padding-bottom: 7px
+        font-family: "RobotoBold", sans-serif
         &:hover
           color: #000000
+        span
+          text-transform: uppercase
   .video
     margin-top: 55px
     img
@@ -168,11 +188,13 @@ nav
   text-align: center
   padding-bottom: 20px
   h3
-    font-size: $fz + 18
+    font-size: em(37)
     padding-bottom: 25px
   form
     input, button
-      margin-left: 30px
+      font-family: "RobotoLight", sans-serif
+      font-size: em(15)
+      margin: 0 15px
       border: 1px solid #fff
       border-radius: 15px
       background-color: transparent
@@ -191,8 +213,9 @@ nav
       &:-ms-input-placeholder
         color: #ffffff
     button
+      font-family: "RobotoBold", sans-serif
+      font-size: em(18)
       border: 2px solid #fff
-      font-weight: bold
       text-transform: uppercase
       transition: all .5s
       &:hover
@@ -205,8 +228,8 @@ nav
   padding: 35px 0 10px 0
   h1
     text-align: center
-    font-weight: bold
-    font-size: $fz + 16
+    font-family: "RobotoBold", sans-serif
+    font-size: em(40)
   .section
     margin-left: 5%
     padding-bottom: 60px
@@ -214,16 +237,16 @@ nav
       padding-right: 5%
       &>h3
         color: #2d2d2d
-        font-size: $fz + 8
-        font-weight: bold
+        font-size: em(30)
+        font-family: "RobotoBold", sans-serif
         display: inline
         padding: 0 35px 0 15px
       &>a
         border-bottom: 1px solid
         color: #1a75aa
         float: right
-        font-size: $fz
-        font-weight: bold
+        font-size: em(20)
+        font-family: "RobotoBold", sans-serif
         padding-top: 5px
         &:hover
           color: #000000
@@ -240,8 +263,6 @@ nav
         overflow: hidden
         margin-bottom: 10px
         height: 165px
-        img[alt="poster"]
-          width: 100%
         img[alt="play"]
           position: absolute
           top: 50%
@@ -252,8 +273,8 @@ nav
           &:hover
             transform: translate( -50%, -50%) scale(1.2)
       h3
-        font-size: $fz - 4
-        font-weight: bold
+        font-size: em(15)
+        font-family: "RobotoBold", sans-serif
         margin: 15px auto
 //reviews styles
 .reviews
@@ -261,29 +282,33 @@ nav
   text-align: center
   padding: 35px 0 55px 0
   h1
-    font-size: $fz + 16
-    font-weight: bold
+    font-size: em(40)
+    font-family: "RobotoBold", sans-serif
   h2
+    font-family: "RobotoLight", sans-serif
     text-align: left
-    font-size: $fz + 20
+    font-size: em(40)
     margin-left: 26px
   .review
     border-bottom: 1px solid #d0d0d0
-    padding-bottom: 45px
-    padding-top: 45px
+    padding: 35px 0
     &:last-child
       border-bottom: 0
   .review-text
     text-align: left
+    p
+      font-family: "RobotoLight", sans-serif
     .link_label
-      font-weight: bold
-      font-size: $fz
+      color: #3d3d3d
+      font-family: "RobotoBold", sans-serif
+      font-size: em(18)
       margin-bottom: 5px
       margin-top: 10px
     a
+      font-family: "RobotoLight", sans-serif
       border-bottom: 2px solid
       color: #008cc0
-      font-size: $fz
+      font-size: em(18)
   .reviews_video,
   .reviews_video_big
     margin: 15px
@@ -309,15 +334,16 @@ nav
         &:hover
           transform: translate( -50%, -50%) scale(1.2)
     h3
-      font-size: $fz - 2
-      font-weight: bold
-      padding-bottom: 15px
+      font-size: em(18)
+      font-family: "RobotoBold", sans-serif
+      padding-bottom: 5px
     h4
-      font-size: $fz - 4
-      font-weight: bold
-      padding-bottom: 10px
+      font-size: em(15)
+      font-family: "RobotoBold", sans-serif
+      padding-bottom: 5px
     p
-      font-size: $fz - 5
+      font-family: "RobotoLight", sans-serif
+      font-size: em(15)
       margin: 0
       padding-bottom: 15px
   .reviews_video_big
@@ -330,10 +356,10 @@ footer
   +clear
   .bottom-logo
     padding-top: 10px
-    font-size: $fz - 4
+    font-size: em(15)
     line-height: 2
   .bottom-contacts
-    font-size: $fz - 4
+    font-size: em(15)
   .bottom-logo-create
     line-height: 2
 

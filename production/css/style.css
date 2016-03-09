@@ -32,9 +32,23 @@
 
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("embedded-opentype");
   src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff");
   src: url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot") format("embedded-opentype");
+  src: url("../fonts/RobotoLight/RobotoLight.woff") format("woff");
+  src: url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot") format("embedded-opentype");
+  src: url("../fonts/RobotoBold/RobotoBold.woff") format("woff");
+  src: url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 .clear:after {
@@ -68,40 +82,47 @@ a {
   a:hover {
     color: inherit; }
 
+strong {
+  font-family: "RobotoBold", sans-serif; }
+
 nav {
   background: #242424;
   padding-bottom: 10px;
   width: 100%; }
   nav .menu a {
+    font-family: "RobotoBold", sans-serif;
     color: #ffd302;
     border-bottom: 3px solid;
-    font-weight: bold;
     padding-bottom: 2px;
     display: inline-block;
-    margin-top: 15px;
-    font-size: 16pt;
+    margin-top: 20px;
+    font-size: 1.125em;
     margin-left: 15px; }
     nav .menu a:hover, nav .menu a.active {
       color: #ffffff; }
   nav .phone {
-    text-align: center; }
+    text-align: center;
+    margin-top: 5px; }
     nav .phone p {
       color: #ffffff;
-      font-size: 24pt;
+      font-size: 1.5em;
       margin: 0; }
     nav .phone a {
       border-bottom: 1px dotted;
-      color: #ffd302; }
+      color: #ffd302;
+      font-size: 0.875em; }
   nav .email {
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
     nav .email p {
       color: #ffffff;
-      font-size: 12pt;
-      margin: 10px 0; }
+      font-size: 0.8125em;
+      margin: 5px 0;
+      text-transform: uppercase; }
     nav .email a {
       color: #ffd302;
       border-bottom: 1px solid;
-      font-size: 13pt; }
+      font-size: 1.0625em; }
 
 .intro,
 .reviews_intro,
@@ -125,23 +146,24 @@ nav {
     .intro .name p,
     .reviews_intro .name p,
     .our_works_intro .name p {
+      font-family: "RobotoLight", sans-serif;
       display: inline;
       margin: 0 20px;
-      font-size: 16pt; }
+      font-size: 1.25em; }
     .intro .name h3,
     .reviews_intro .name h3,
     .our_works_intro .name h3 {
+      font-family: "RobotoBold", sans-serif;
       display: inline;
-      font-weight: bold;
       text-transform: uppercase;
-      font-size: 16pt;
+      font-size: 1.25em;
       margin: 0 20px;
       color: #872d85; }
   .intro .slogan,
   .reviews_intro .slogan,
   .our_works_intro .slogan {
-    font-weight: bold;
-    font-size: 24pt; }
+    font-family: "RobotoBold", sans-serif;
+    font-size: 1.875em; }
 
 .main-page {
   background: #f4f4f4;
@@ -152,14 +174,17 @@ nav {
     .main-page ul li {
       padding-bottom: 30px;
       padding-left: 45px;
-      font-weight: bold; }
+      font-family: "RobotoBold", sans-serif; }
       .main-page ul li a {
         color: #1a75aa;
         border-bottom: 2px solid rgba(26, 117, 170, 0.5);
-        font-size: 18pt;
-        padding-bottom: 7px; }
+        font-size: 1.1875em;
+        padding-bottom: 7px;
+        font-family: "RobotoBold", sans-serif; }
         .main-page ul li a:hover {
           color: #000000; }
+        .main-page ul li a span {
+          text-transform: uppercase; }
   .main-page .video {
     margin-top: 55px; }
     .main-page .video img {
@@ -173,10 +198,12 @@ nav {
   text-align: center;
   padding-bottom: 20px; }
   .form_section h3 {
-    font-size: 34pt;
+    font-size: 2.3125em;
     padding-bottom: 25px; }
   .form_section form input, .form_section form button {
-    margin-left: 30px;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 0.9375em;
+    margin: 0 15px;
     border: 1px solid #fff;
     border-radius: 15px;
     background-color: transparent;
@@ -195,8 +222,9 @@ nav {
     .form_section form input:-ms-input-placeholder, .form_section form button:-ms-input-placeholder {
       color: #ffffff; }
   .form_section form button {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 1.125em;
     border: 2px solid #fff;
-    font-weight: bold;
     text-transform: uppercase;
     transition: all 0.5s; }
     .form_section form button:hover {
@@ -208,8 +236,8 @@ nav {
   padding: 35px 0 10px 0; }
   .works h1 {
     text-align: center;
-    font-weight: bold;
-    font-size: 32pt; }
+    font-family: "RobotoBold", sans-serif;
+    font-size: 2.5em; }
   .works .section {
     margin-left: 5%;
     padding-bottom: 60px; }
@@ -217,16 +245,16 @@ nav {
       padding-right: 5%; }
       .works .section .title > h3 {
         color: #2d2d2d;
-        font-size: 24pt;
-        font-weight: bold;
+        font-size: 1.875em;
+        font-family: "RobotoBold", sans-serif;
         display: inline;
         padding: 0 35px 0 15px; }
       .works .section .title > a {
         border-bottom: 1px solid;
         color: #1a75aa;
         float: right;
-        font-size: 16pt;
-        font-weight: bold;
+        font-size: 1.25em;
+        font-family: "RobotoBold", sans-serif;
         padding-top: 5px; }
         .works .section .title > a:hover {
           color: #000000; }
@@ -243,8 +271,6 @@ nav {
         overflow: hidden;
         margin-bottom: 10px;
         height: 165px; }
-        .works .section .work_video a img[alt="poster"] {
-          width: 100%; }
         .works .section .work_video a img[alt="play"] {
           position: absolute;
           top: 50%;
@@ -255,8 +281,8 @@ nav {
           .works .section .work_video a img[alt="play"]:hover {
             transform: translate(-50%, -50%) scale(1.2); }
       .works .section .work_video h3 {
-        font-size: 12pt;
-        font-weight: bold;
+        font-size: 0.9375em;
+        font-family: "RobotoBold", sans-serif;
         margin: 15px auto; }
 
 .reviews {
@@ -264,29 +290,33 @@ nav {
   text-align: center;
   padding: 35px 0 55px 0; }
   .reviews h1 {
-    font-size: 32pt;
-    font-weight: bold; }
+    font-size: 2.5em;
+    font-family: "RobotoBold", sans-serif; }
   .reviews h2 {
+    font-family: "RobotoLight", sans-serif;
     text-align: left;
-    font-size: 36pt;
+    font-size: 2.5em;
     margin-left: 26px; }
   .reviews .review {
     border-bottom: 1px solid #d0d0d0;
-    padding-bottom: 45px;
-    padding-top: 45px; }
+    padding: 35px 0; }
     .reviews .review:last-child {
       border-bottom: 0; }
   .reviews .review-text {
     text-align: left; }
+    .reviews .review-text p {
+      font-family: "RobotoLight", sans-serif; }
     .reviews .review-text .link_label {
-      font-weight: bold;
-      font-size: 16pt;
+      color: #3d3d3d;
+      font-family: "RobotoBold", sans-serif;
+      font-size: 1.125em;
       margin-bottom: 5px;
       margin-top: 10px; }
     .reviews .review-text a {
+      font-family: "RobotoLight", sans-serif;
       border-bottom: 2px solid;
       color: #008cc0;
-      font-size: 16pt; }
+      font-size: 1.125em; }
   .reviews .reviews_video,
   .reviews .reviews_video_big {
     margin: 15px;
@@ -317,17 +347,18 @@ nav {
           transform: translate(-50%, -50%) scale(1.2); }
     .reviews .reviews_video h3,
     .reviews .reviews_video_big h3 {
-      font-size: 14pt;
-      font-weight: bold;
-      padding-bottom: 15px; }
+      font-size: 1.125em;
+      font-family: "RobotoBold", sans-serif;
+      padding-bottom: 5px; }
     .reviews .reviews_video h4,
     .reviews .reviews_video_big h4 {
-      font-size: 12pt;
-      font-weight: bold;
-      padding-bottom: 10px; }
+      font-size: 0.9375em;
+      font-family: "RobotoBold", sans-serif;
+      padding-bottom: 5px; }
     .reviews .reviews_video p,
     .reviews .reviews_video_big p {
-      font-size: 11pt;
+      font-family: "RobotoLight", sans-serif;
+      font-size: 0.9375em;
       margin: 0;
       padding-bottom: 15px; }
   .reviews .reviews_video_big {
@@ -342,10 +373,10 @@ footer {
     clear: both; }
   footer .bottom-logo {
     padding-top: 10px;
-    font-size: 12pt;
+    font-size: 0.9375em;
     line-height: 2; }
   footer .bottom-contacts {
-    font-size: 12pt; }
+    font-size: 0.9375em; }
   footer .bottom-logo-create {
     line-height: 2; }
 
@@ -355,6 +386,7 @@ footer {
   .our_works_intro .content {
     border-bottom: 1px solid #e9e9e9; }
     .our_works_intro .content h1 {
+      font-family: "RobotoLight", sans-serif;
       text-transform: uppercase;
       color: #872d85; }
     .our_works_intro .content .tags ul {
@@ -372,8 +404,8 @@ footer {
           left: -8%; }
         .our_works_intro .content .tags ul li a {
           display: inline-block;
-          font-size: 12pt;
-          font-weight: bold;
+          font-size: 1em;
+          font-family: "RobotoBold", sans-serif;
           padding: 1px 15px; }
           .our_works_intro .content .tags ul li a.active {
             color: #872d85;
@@ -383,7 +415,7 @@ footer {
               position: absolute;
               width: 2px;
               height: 12px;
-              background: #000000;
+              background: #dddddd;
               left: 8px;
               top: 25%;
               display: block; }
@@ -394,7 +426,7 @@ footer {
               height: 10px;
               left: 6px;
               bottom: 0;
-              border-top: 6px solid #000000;
+              border-top: 6px solid #dddddd;
               border-right: 3px solid transparent;
               border-left: 3px solid transparent;
               border-bottom: 0; }
@@ -422,15 +454,15 @@ footer {
       .works_blocks .no-padding .work_block.big {
         padding-bottom: 67.1%; }
         .works_blocks .no-padding .work_block.big .hover_eff h3 {
-          font-size: 24px;
+          font-size: 1.5em;
           margin-top: -20px; }
       .works_blocks .no-padding .work_block.small {
         padding-bottom: 62.2%; }
         .works_blocks .no-padding .work_block.small .hover_eff h3 {
-          font-size: 16px;
+          font-size: 1em;
           margin-top: -50px; }
         .works_blocks .no-padding .work_block.small .hover_eff h5, .works_blocks .no-padding .work_block.small .hover_eff p {
-          font-size: 12px; }
+          font-size: 0.75em; }
         .works_blocks .no-padding .work_block.small .hover_eff:hover h3 {
           margin-top: -30px; }
       .works_blocks .no-padding .work_block .hover_eff {
@@ -457,9 +489,9 @@ footer {
         .works_blocks .no-padding .work_block .hover_eff h3 {
           opacity: 0;
           transition: all 0.2s ease-in;
-          font-weight: bold; }
+          font-family: "RobotoBold", sans-serif; }
         .works_blocks .no-padding .work_block .hover_eff h5 {
-          font-size: 14px;
+          font-size: 0.875em;
           opacity: 0;
           margin-top: -20px;
           transition: all 0.3s ease-in 0.2s; }
@@ -471,7 +503,7 @@ footer {
           margin: -20px auto;
           transition: all 0.3s ease-in 0.5s; }
         .works_blocks .no-padding .work_block .hover_eff p {
-          font-size: 14px;
+          font-size: 0.875em;
           margin-top: 20px;
           opacity: 0;
           transition: all 0.3s ease-in 0.8s; }
@@ -488,18 +520,19 @@ header#blog {
     line-height: 1.2;
     padding: 10px 30px; }
     header#blog .name p {
-      font-size: 16pt;
+      font-family: "RobotoLight", sans-serif;
+      font-size: 1.25em;
       margin: 0; }
     header#blog .name h3 {
-      font-weight: bold;
+      font-family: "RobotoBold", sans-serif;
       text-transform: uppercase;
-      font-size: 16pt;
+      font-size: 1.25em;
       color: #872d85;
       margin: 0; }
   header#blog .blog_title {
     display: inline;
     line-height: 2;
-    font-weight: bold; }
+    font-family: "RobotoBold", sans-serif; }
   header#blog .speech_bubble {
     display: inline-block;
     vertical-align: top;
@@ -514,7 +547,7 @@ header#blog {
     margin-left: 40px;
     border-bottom: 3px solid;
     padding-bottom: 5px;
-    font-weight: bold; }
+    font-family: "RobotoBold", sans-serif; }
     #menu a:first-child {
       margin-left: 15px; }
 
@@ -527,6 +560,7 @@ header#blog {
     overflow: hidden;
     height: 408px; }
     #page .slider .favorite {
+      color: #353535;
       position: absolute;
       margin: 10px 15px; }
       #page .slider .favorite img[alt="icons"] {
@@ -561,16 +595,17 @@ header#blog {
       font-size: 1.25em;
       padding: 30px;
       background: rgba(47, 47, 47, 0.75);
-      font-weight: bold; }
+      font-family: "RobotoBold", sans-serif; }
   #page .latest_news {
     border-radius: 5px;
     border: 1px solid #dddddd;
     padding: 15px 25px; }
     #page .latest_news h1 {
-      font-weight: bold;
+      font-family: "RobotoBold", sans-serif;
       font-size: 1.5625em;
       margin-top: 0;
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      color: #393939; }
     #page .latest_news a:hover p {
       text-decoration: underline; }
     #page .latest_news .last_news_post {
@@ -582,6 +617,7 @@ header#blog {
         #page .latest_news .last_news_post .img_wrapper img {
           width: 100%; }
       #page .latest_news .last_news_post p {
+        font-family: "RobotoLight", sans-serif;
         width: 70%;
         float: right;
         margin: 0;
@@ -631,6 +667,7 @@ header#blog {
     margin: 50px auto; }
     #page #load_more button {
       color: #636363;
+      font-family: "RobotoLight", sans-serif;
       font-size: 1.125em;
       border-radius: 15px;
       border: 2px solid #d37ad1;
@@ -643,7 +680,7 @@ header#blog {
   #page #breadcrumps {
     padding-left: 1%;
     color: #757575;
-    font-size: 1.125em; }
+    font-size: 0.9375em; }
     #page #breadcrumps a.active {
       color: #872d85;
       text-decoration: underline; }
@@ -710,7 +747,7 @@ header#blog {
       text-align: center; }
       #page #page_num ul li {
         display: inline-block;
-        padding: 5px 10px;
+        padding: 2px 8px;
         border: 1px solid #9c9c9c;
         border-radius: 5px; }
         #page #page_num ul li.active {
@@ -740,11 +777,13 @@ header#blog {
     #news_full #news_body .news_body_img .bottom_statistics .views {
       margin-right: 15px; }
 #news_full #news_body h3 {
+  font-family: "RobotoLight", sans-serif;
   font-size: 1.125em;
   color: #4e4e4e; }
 #news_full #news_body p {
   margin: 40px auto; }
 #news_full #news_body h2 {
+  font-family: "RobotoLight", sans-serif;
   font-size: 1.5625em;
   margin-bottom: 65px; }
 #news_full #subscribe {
@@ -753,17 +792,19 @@ header#blog {
   padding: 20px;
   margin-top: 20px; }
   #news_full #subscribe h1 {
-    font-weight: bold;
+    font-family: "RobotoBold", sans-serif;
     color: #363636;
     font-size: 1.125em;
     margin-bottom: auto; }
   #news_full #subscribe p {
+    font-family: "RobotoLight", sans-serif;
     color: #6d6d6d;
     font-size: 0.9375em;
     margin-bottom: 35px; }
   #news_full #subscribe form {
     text-align: center; }
     #news_full #subscribe form input {
+      font-family: "RobotoLight", sans-serif;
       font-size: 0.9375em;
       margin: 15px auto;
       width: 100%;
@@ -773,7 +814,7 @@ header#blog {
       border-radius: 5px; }
     #news_full #subscribe form button {
       margin: 15px auto;
-      font-weight: bold;
+      font-family: "RobotoBold", sans-serif;
       text-transform: uppercase;
       color: #872d85;
       border: 1px solid #d0d0d0;
@@ -791,10 +832,11 @@ header#blog {
   border-radius: 5px;
   border: 1px solid #e1e1e1; }
   #news_full #similar h1 {
-    font-weight: bold;
+    font-family: "RobotoBold", sans-serif;
     font-size: 1.125em;
     margin-bottom: auto; }
   #news_full #similar a {
+    font-family: "RobotoLight", sans-serif;
     display: inline-block;
     margin: 20px auto;
     font-size: 0.9375em; }
