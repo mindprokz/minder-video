@@ -1,69 +1,71 @@
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 1px) {
-
-}
-
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 100px) {
-    .reviews_block{
-        margin: 15px auto;
-        float: none;
-    }
-    .mar .row{margin: 0;}
-    .pad .row{padding: 0;}
-    .mar{margin-left: 0;}
-    .pad{padding-left: 0;}
-}
+@media only screen and (min-width: 100px) {
+  .reviews_block {
+    margin: 15px auto;
+    float: none; }
 
+  .mar {
+    margin-left: 0; }
+    .mar .row {
+      margin: 0; }
+
+  .pad {
+    padding-left: 0; }
+    .pad .row {
+      padding: 0; } }
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; }
 
-    /*Disable Animation on Mobile Devices*/
-    .animated {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
+  .mar {
+    margin-left: 2%; }
 
-    .mar{margin-left: 2%;}
-    .pad{padding-left: 2%;}
-}
-@media only screen and (min-width : 850px) {
-    .mar{margin-left: 9%;}
-    .pad{padding-left: 9%;}
-}
+  .pad {
+    padding-left: 2%; } }
+@media only screen and (min-width: 850px) {
+  .mar {
+    margin-left: 9%; }
+
+  .pad {
+    padding-left: 9%; } }
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .mar{margin-left: 16%;}
-    .pad{padding-left: 16%;}
-}
+@media only screen and (min-width: 992px) {
+  .mar {
+    margin-left: 16%; }
 
+  .pad {
+    padding-left: 16%; } }
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .content{
-        width: 1285px;
-        margin: auto;
-        position: relative;
-    }
-    #main_form_section1 h3{
-        font-size: 45px;
-        padding-bottom: 25px;
-    }
-    .mar{margin-left: 7%;}
-    .pad{padding-left: 2%;}
-}
+@media only screen and (min-width: 1200px) {
+  .content {
+    width: 1285px;
+    margin: auto;
+    position: relative; }
+
+  #main_form_section1 h3 {
+    font-size: 45px;
+    padding-bottom: 25px; }
+
+  .mar {
+    margin-left: 7%; }
+
+  .pad {
+    padding-left: 2%; } }
+
+/*# sourceMappingURL=media.css.map */
