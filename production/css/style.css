@@ -349,8 +349,6 @@ footer {
   footer .bottom-logo-create {
     line-height: 2; }
 
-/*** Our Works styles ** */
-/*********************** */
 .our_works_intro {
   background: #ffffff;
   margin-bottom: 25px; }
@@ -362,18 +360,45 @@ footer {
     .our_works_intro .content .tags ul {
       padding: 0; }
       .our_works_intro .content .tags ul li {
-        border-radius: 8px;
+        border-radius: 10px;
         border: 1px solid #ebebeb;
         display: inline-block;
         margin-top: 5px; }
         .our_works_intro .content .tags ul li:hover {
           border-color: #872d85; }
+        .our_works_intro .content .tags ul li:first-child {
+          position: absolute;
+          top: 35%;
+          left: -8%; }
         .our_works_intro .content .tags ul li a {
           display: inline-block;
           font-size: 12pt;
           font-weight: bold;
-          padding: 1px 10px; }
-          .our_works_intro .content .tags ul li a.active, .our_works_intro .content .tags ul li a:hover {
+          padding: 1px 15px; }
+          .our_works_intro .content .tags ul li a.active {
+            color: #872d85;
+            position: relative; }
+            .our_works_intro .content .tags ul li a.active:before {
+              content: "";
+              position: absolute;
+              width: 2px;
+              height: 12px;
+              background: #000000;
+              left: 8px;
+              top: 25%;
+              display: block; }
+            .our_works_intro .content .tags ul li a.active:after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 10px;
+              left: 6px;
+              bottom: 0;
+              border-top: 6px solid #000000;
+              border-right: 3px solid transparent;
+              border-left: 3px solid transparent;
+              border-bottom: 0; }
+          .our_works_intro .content .tags ul li a:hover {
             color: #872d85; }
 
 .works_blocks {
@@ -451,8 +476,6 @@ footer {
           opacity: 0;
           transition: all 0.3s ease-in 0.8s; }
 
-/*** Our Works styles ** */
-/*********************** */
 header#blog {
   background: #f6f6f6;
   padding: 8px; }
@@ -697,12 +720,13 @@ header#blog {
   color: #333333;
   font-size: 1.25em;
   margin-bottom: 40px; }
-#news_full .news_body {
+#news_full #news_body .news_body_img {
   position: relative;
-  overflow: hidden; }
-  #news_full .news_body img {
+  overflow: hidden;
+  margin: 40px auto; }
+  #news_full #news_body .news_body_img img {
     width: 100%; }
-  #news_full .news_body .bottom_statistics {
+  #news_full #news_body .news_body_img .bottom_statistics {
     position: absolute;
     width: 100%;
     color: #ffffff;
@@ -711,10 +735,18 @@ header#blog {
     line-height: 3;
     padding: 0 30px;
     font-size: 0.9375em; }
-    #news_full .news_body .bottom_statistics .comments, #news_full .news_body .bottom_statistics .views {
+    #news_full #news_body .news_body_img .bottom_statistics .comments, #news_full #news_body .news_body_img .bottom_statistics .views {
       float: right; }
-    #news_full .news_body .bottom_statistics .views {
+    #news_full #news_body .news_body_img .bottom_statistics .views {
       margin-right: 15px; }
+#news_full #news_body h3 {
+  font-size: 1.125em;
+  color: #4e4e4e; }
+#news_full #news_body p {
+  margin: 40px auto; }
+#news_full #news_body h2 {
+  font-size: 1.5625em;
+  margin-bottom: 65px; }
 #news_full #subscribe {
   background: #ececec;
   border-radius: 5px;
@@ -749,6 +781,27 @@ header#blog {
       background-color: transparent;
       line-height: 2;
       padding: 0 15px;
-      font-size: 0.9375em; }
+      font-size: 0.9375em;
+      transition: background 0.5s; }
+      #news_full #subscribe form button:hover {
+        background: #d0d0d0; }
+#news_full #similar {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1; }
+  #news_full #similar h1 {
+    font-weight: bold;
+    font-size: 1.125em;
+    margin-bottom: auto; }
+  #news_full #similar a {
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 0.9375em; }
+    #news_full #similar a:hover {
+      text-decoration: underline; }
+#news_full .widgets {
+  margin-top: 30px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

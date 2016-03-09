@@ -10,18 +10,55 @@
       ul
         padding: 0
         li
-          border-radius: 8px
+          border-radius: 10px
           border: 1px solid #ebebeb
           display: inline-block
           margin-top: 5px
           &:hover
             border-color: $primary
+          &:first-child
+            position: absolute
+            top: 35%
+            left: -8%
           a
             display: inline-block
             font-size: $fz - 4
             font-weight: bold
-            padding: 1px 10px
-            &.active,
+            padding: 1px 15px
+            &.active
+              color: $primary
+              position: relative
+              &:before
+                content: ''
+                position: absolute
+                width: 2px
+                height: 12px
+                background: #000000
+                left: 8px
+                top: 25%
+                display: block
+              &:after /*arrow down*/
+                content: ''
+                position: absolute
+                width: 0
+                height: 10px
+                left: 6px
+                bottom: 0
+                border-top: 6px solid #000000
+                border-right: 3px solid transparent
+                border-left: 3px solid transparent
+                border-bottom: 0
+              //&:after /*arrow up*/
+              //  content: ''
+              //  position: absolute
+              //  width: 0
+              //  height: 10px
+              //  left: 6px
+              //  top: 0
+              //  border-bottom: 6px solid #000000
+              //  border-right: 3px solid transparent
+              //  border-left: 3px solid transparent
+              //  border-up: 0
             &:hover
               color: $primary
 
