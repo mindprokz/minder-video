@@ -1,21 +1,84 @@
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 1px)
+/*==========  Desktop First Method  ==========*/
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 100px)
-  .reviews_block
-    margin: 15px auto
-    float: none
-  .mar
-    margin-left: 0
-    .row
-      margin: 0
-  .pad
-    padding-left: 0
-    .row
-      padding: 0
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .hide-lg
+    display: none !important
+  .vis-lg
+    display: block !important
+  nav
+    .menu
+      a
+        margin-left: 10px
+    .phone
+      a
+        font-size: em(14)
+    .email
+      p
+        font-size: em(12)
+      a
+        font-size: em(16)
+  .intro
+    .name
+      padding: 15px 0
+      h3
+        font-size: em(18)
+      p
+        font-size: em(14)
+    .slogan
+      font-size: em(24)
+      line-height: 2.5
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .hide-md
+    display: none !important
+  .vis-md
+    display: block !important
+  nav
+    .menu
+      text-align: center
+      margin-bottom: 15px
+    .email
+      text-align: left
+    .phone
+      text-align: right
+  .our_works_intro
+    .logo
+      display: none
+    h1,
+    .tags
+      text-align: center
+      li:first-child
+        position: static
+  .works .section .title
+    width: 95%
+    h3
+      font-size: em(24)
+    a
+      font-size: em(18)
+  .main-page
+    ul li
+      padding-left: 25px
+      padding-bottom: 20px
+      a
+        font-size: em(14)
+  header#blog
+    .name
+      padding: 10px 15px
+  #menu
+    a
+      margin-left: 10px
+  #page
+    .latest_news
+      margin-top: 20px
+
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (max-width : 768px)
+  .hide-sm
+    display: none !important
+  .vis-sm
+    display: block !important
   .animated
     -o-transition-property: none !important
     -moz-transition-property: none !important
@@ -32,31 +95,53 @@
     -o-animation: none !important
     -ms-animation: none !important
     animation: none !important
-  .mar
-    margin-left: 2%
-  .pad
-    padding-left: 2%
-@media only screen and (min-width : 850px)
-  .mar
-    margin-left: 9%
-  .pad
-    padding-left: 9%
+  nav
+    .email,
+    .phone
+      text-align: center
+  .intro
+    .logo
+      display: none
+    .name
+      padding: 15px 0
+      h3,
+      p
+        font-size: em(20)
+    .slogan
+      font-size: em(20)
+      line-height: 3
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .hide-xs
+    display: none !important
+  .vis-xs
+    display: block !important
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .intro
+    .name
+      h3, p
+        margin: 0 10px
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-  .mar
-    margin-left: 16%
-  .pad
-    padding-left: 16%
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
   .content
     width: 1285px
     margin: auto
     position: relative
-  #main_form_section1 h3
-    font-size: 45px
-    padding-bottom: 25px
-  .mar
-    margin-left: 7%
-  .pad
-    padding-left: 2%
+    +clear
