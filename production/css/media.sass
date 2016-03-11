@@ -28,6 +28,19 @@
     .slogan
       font-size: em(24)
       line-height: 2.5
+  .our_works_intro
+    .content
+      .tags ul li a
+        font-size: em(14)
+  header#blog
+    .name
+      padding: 10px 15px
+      p, h3
+        font-size: em(16)
+  #page
+    .latest_news
+      .last_news_post p
+        width: 55%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -63,15 +76,22 @@
       padding-bottom: 20px
       a
         font-size: em(14)
-  header#blog
-    .name
-      padding: 10px 15px
   #menu
     a
       margin-left: 10px
   #page
     .latest_news
       margin-top: 20px
+      .last_news_post
+        p
+          width: 78%
+    #page_num
+      #prev, #next
+        span
+          display: none
+    #news_body
+      img
+        width: 100%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -110,6 +130,9 @@
     .slogan
       font-size: em(20)
       line-height: 3
+  #news_full
+    #subscribe
+      text-align: center
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

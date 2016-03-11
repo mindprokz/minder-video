@@ -444,78 +444,80 @@ footer {
     content: "";
     display: table;
     clear: both; }
-  .works_blocks .align {
-    margin-top: -225px; }
-  .works_blocks .no-padding {
+  .works_blocks .col-md-6 {
     padding: 0; }
-    .works_blocks .no-padding .work_block {
-      position: relative;
-      overflow: hidden;
-      margin-right: 30px;
-      margin-bottom: 30px;
-      height: 0; }
-      .works_blocks .no-padding .work_block img {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0; }
-      .works_blocks .no-padding .work_block.big {
-        padding-bottom: 67.1%; }
-        .works_blocks .no-padding .work_block.big .hover_eff h3 {
-          font-size: 1.5em;
-          margin-top: -20px; }
-      .works_blocks .no-padding .work_block.small {
-        padding-bottom: 62.2%; }
-        .works_blocks .no-padding .work_block.small .hover_eff h3 {
-          font-size: 1em;
-          margin-top: -50px; }
-        .works_blocks .no-padding .work_block.small .hover_eff h5, .works_blocks .no-padding .work_block.small .hover_eff p {
-          font-size: 0.75em; }
-        .works_blocks .no-padding .work_block.small .hover_eff:hover h3 {
-          margin-top: -30px; }
-      .works_blocks .no-padding .work_block .hover_eff {
-        background: rgba(80, 0, 95, 0.5);
-        cursor: pointer;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 25% 25px 25px 25px;
-        transition: all 0.5s ease-out;
-        opacity: 0;
-        color: #ffffff; }
-        .works_blocks .no-padding .work_block .hover_eff:hover {
+  .works_blocks .work_block {
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    height: 0; }
+    .works_blocks .work_block img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .works_blocks .work_block.big {
+      padding-bottom: 74%; }
+      .works_blocks .work_block.big .hover_eff h3 {
+        font-size: 1.5em;
+        margin-top: -20px; }
+    .works_blocks .work_block.small {
+      padding-bottom: 69%; }
+      .works_blocks .work_block.small .hover_eff h3 {
+        font-size: 1em;
+        margin-top: -50px; }
+      .works_blocks .work_block.small .hover_eff h5, .works_blocks .work_block.small .hover_eff p {
+        font-size: 0.75em; }
+      .works_blocks .work_block.small .hover_eff:hover h3 {
+        margin-top: -30px; }
+    .works_blocks .work_block.smallest {
+      padding-bottom: 74%;
+      margin: 30px 0; }
+      .works_blocks .work_block.smallest .hover_eff {
+        padding: 15% 15px 15px 15px !important; }
+    .works_blocks .work_block .hover_eff {
+      background: rgba(80, 0, 95, 0.5);
+      cursor: pointer;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 25% 25px 25px 25px;
+      transition: all 0.5s ease-out;
+      opacity: 0;
+      color: #ffffff; }
+      .works_blocks .work_block .hover_eff:hover {
+        opacity: 1; }
+        .works_blocks .work_block .hover_eff:hover h3, .works_blocks .work_block .hover_eff:hover h5, .works_blocks .work_block .hover_eff:hover p {
+          margin-top: 0;
           opacity: 1; }
-          .works_blocks .no-padding .work_block .hover_eff:hover h3, .works_blocks .no-padding .work_block .hover_eff:hover h5, .works_blocks .no-padding .work_block .hover_eff:hover p {
-            margin-top: 0;
-            opacity: 1; }
-          .works_blocks .no-padding .work_block .hover_eff:hover .white_line {
-            margin: 8px auto;
-            opacity: 1; }
-        .works_blocks .no-padding .work_block .hover_eff h3 {
-          opacity: 0;
-          transition: all 0.2s ease-in;
-          font-family: "RobotoBold", sans-serif; }
-        .works_blocks .no-padding .work_block .hover_eff h5 {
-          font-size: 0.875em;
-          opacity: 0;
-          margin-top: -20px;
-          transition: all 0.3s ease-in 0.2s; }
-        .works_blocks .no-padding .work_block .hover_eff .white_line {
-          width: 30%;
-          height: 3px;
-          background: #fff;
-          opacity: 0;
-          margin: -20px auto;
-          transition: all 0.3s ease-in 0.5s; }
-        .works_blocks .no-padding .work_block .hover_eff p {
-          font-size: 0.875em;
-          margin-top: 20px;
-          opacity: 0;
-          transition: all 0.3s ease-in 0.8s; }
+        .works_blocks .work_block .hover_eff:hover .white_line {
+          margin: 8px auto;
+          opacity: 1; }
+      .works_blocks .work_block .hover_eff h3 {
+        opacity: 0;
+        transition: all 0.2s ease-in;
+        font-family: "RobotoBold", sans-serif; }
+      .works_blocks .work_block .hover_eff h5 {
+        font-size: 0.875em;
+        opacity: 0;
+        margin-top: -20px;
+        transition: all 0.3s ease-in 0.2s; }
+      .works_blocks .work_block .hover_eff .white_line {
+        width: 30%;
+        height: 3px;
+        background: #fff;
+        opacity: 0;
+        margin: -20px auto;
+        transition: all 0.3s ease-in 0.5s; }
+      .works_blocks .work_block .hover_eff p {
+        font-size: 0.875em;
+        margin-top: 20px;
+        opacity: 0;
+        transition: all 0.3s ease-in 0.8s; }
 
 header#blog {
   background: #f6f6f6;
@@ -884,7 +886,18 @@ header#blog {
       font-size: 0.875em; }
   .intro .slogan {
     font-size: 1.5em;
-    line-height: 2.5; } }
+    line-height: 2.5; }
+
+  .our_works_intro .content .tags ul li a {
+    font-size: 0.875em; }
+
+  header#blog .name {
+    padding: 10px 15px; }
+    header#blog .name p, header#blog .name h3 {
+      font-size: 1em; }
+
+  #page .latest_news .last_news_post p {
+    width: 55%; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .hide-md {
@@ -923,14 +936,17 @@ header#blog {
     .main-page ul li a {
       font-size: 0.875em; }
 
-  header#blog .name {
-    padding: 10px 15px; }
-
   #menu a {
     margin-left: 10px; }
 
   #page .latest_news {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+    #page .latest_news .last_news_post p {
+      width: 78%; }
+  #page #page_num #prev span, #page #page_num #next span {
+    display: none; }
+  #page #news_body img {
+    width: 100%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .hide-sm {
@@ -969,7 +985,10 @@ header#blog {
       font-size: 1.25em; }
   .intro .slogan {
     font-size: 1.25em;
-    line-height: 3; } }
+    line-height: 3; }
+
+  #news_full #subscribe {
+    text-align: center; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .hide-xs {
