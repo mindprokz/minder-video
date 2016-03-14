@@ -234,10 +234,14 @@ header#blog
       text-align: center
       li
         display: inline-block
-        padding: 2px 8px
-        border: 1px solid #9c9c9c
+        border: 2px solid #9c9c9c
         border-radius: 5px
+        a
+          display: block
+          padding: 2px 8px
         &.active
+          border: 2px solid lighten($primary, 30%)
+        &:hover
           border: 2px solid lighten($primary, 30%)
 
 @import "blog_news_full"
