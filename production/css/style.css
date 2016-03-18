@@ -183,7 +183,8 @@ nav {
         padding-bottom: 7px;
         font-family: "RobotoBold", sans-serif; }
         .main-page ul li a:hover {
-          color: #000000; }
+          color: #000000;
+          border-bottom-color: #000000; }
         .main-page ul li a span {
           text-transform: uppercase; }
   .main-page .video {
@@ -716,7 +717,7 @@ header#blog {
         #page #page_num #prev:hover span, #page #page_num #next:hover span {
           background: #000000; }
       #page #page_num #prev span, #page #page_num #next span {
-        width: 25px;
+        width: 25%;
         height: 2px;
         background: #9c9c9c;
         top: 50%;
@@ -900,7 +901,11 @@ header#blog {
       font-size: 1em; }
 
   #page .latest_news .last_news_post p {
-    width: 55%; } }
+    width: 55%; }
+  #page #page_num #prev span {
+    left: -10px; }
+  #page #page_num #next span {
+    right: -10px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .hide-md {
