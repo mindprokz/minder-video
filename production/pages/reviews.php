@@ -1,66 +1,8 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"><![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="ru"><![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="ru"><![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"><!--<![endif]-->
-<!-- html manifest="app.cache" -->
-<head>
-
-	<meta charset="utf-8">
-
-	<title>Отзывы</title>
-	<meta name="description" content="">
-	<meta name="Keywords" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
-</head>
-<body>
-
-<div id="header">
-	<nav>
-		<div class="content">
-			<div class="row">
-				<div class="col-md-7 col-sm-12">
-					<div class="menu">
-						<a href="#" class="active">Главная</a>
-						<a href="#">Наши работы</a>
-						<a href="#">Отзывы клиентов</a>
-						<a href="#">Статьи</a>
-						<a href="#">Контакты</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="phone">
-						<p>+7 701 <strong>808 80 08</strong></p>
-						<a href="#">Заказать обратнрый звонок</a>
-					</div>
-				</div>
-				<div class="col-md-2 col-sm-6">
-					<div class="email">
-						<p>Связаться по e-mail</p>
-						<a href="mailto:hello@mindpro.kz">hello@mindpro.kz</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-</div>
-
 <div id="intro" class="container-fluid reviews_intro intro">
 	<div class="content">
 		<div class="col-md-4 col-sm-5 col-xs-6">
 			<div class="logo">
-				<a href="#"><img src="img/logo.png" alt=""></a>
+				<a href="#"><img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt=""></a>
 			</div>
 			<div class="name">
 				<p>Маркетинговая компания</p>
@@ -80,8 +22,8 @@
 			<div class="col-md-4 col-sm-12 clear">
 				<div class="reviews_video">
 					<a href="#">
-						<img src="img/reciews_video.png" alt="poster">
-						<img src="img/play_button.png" alt="play">
+						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
+						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 					</a>
 					<h3>ТОО «Сантехпром»</h3>
 					<h4>Инна Владимировна</h4>
@@ -113,8 +55,8 @@
 			<div class="col-md-4 col-sm-12 clear">
 				<div class="reviews_video">
 					<a href="#">
-						<img src="img/reciews_video.png" alt="poster">
-						<img src="img/play_button.png" alt="play">
+						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
+						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 					</a>
 					<h3>ТОО «Сантехпром»</h3>
 					<h4>Инна Владимировна</h4>
@@ -146,8 +88,8 @@
 			<div class="col-md-4 col-sm-12 clear">
 				<div class="reviews_video">
 					<a href="#">
-						<img src="img/reciews_video.png" alt="poster">
-						<img src="img/play_button.png" alt="play">
+						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
+						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 					</a>
 					<h3>ТОО «Сантехпром»</h3>
 					<h4>Инна Владимировна</h4>
@@ -179,8 +121,8 @@
 			<div class="col-md-4 col-sm-12 clear">
 				<div class="reviews_video">
 					<a href="#">
-						<img src="img/reciews_video.png" alt="poster">
-						<img src="img/play_button.png" alt="play">
+						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
+						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 					</a>
 					<h3>ТОО «Сантехпром»</h3>
 					<h4>Инна Владимировна</h4>
@@ -222,41 +164,3 @@
 		</div>
 	</form>
 </div>
-
-<footer>
-	<div class="col-md-12">
-		<div class="content">
-			<div class="row">
-				<div class="col-md-4 col-sm-10 col-xs-10 bottom-logo">
-					<h4>
-						<strong>«MINDPRO-GROUP»</strong> — 2016
-					</h4>
-				</div>
-				<div class="col-md-5 hide-md bottom-contacts">
-					<h4>Казахстан, Караганда, Воинов-Интернационалистов, 31</h4>
-					<strong>Телефон: </strong><span style="margin-right: 25px;">+7 (701) 808-80-08</span>
-					<strong>E-mail: </strong><a href="mailto:mindpro@sales.kz">mindpro@sales.kz</a>
-				</div>
-				<div class="col-md-2 col-sm-2 col-xs-2 bottom-logo-create">
-					<a href="http://mindpro.kz">
-						<img src="img/create.png" alt="bottom-logo">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<!--[if lt IE 9]>
-<script src="bower_components/html5shiv/es5-shim.min.js"></script>
-<script src="bower_components/html5shiv/html5shiv.min.js"></script>
-<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="bower_components/respond/respond.min.js"></script>
-<![endif]-->
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
-<script src="js/common.js"></script>
-
-</body>
-</html>

@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"><![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="ru"><![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="ru"><![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"><!--<![endif]-->
-<!-- html manifest="app.cache" -->
-<head>
-
-	<meta charset="utf-8">
-
-	<title>Блог</title>
-	<meta name="description" content="">
-	<meta name="Keywords" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
-</head>
-<body>
-
+<?php get_header(); ?>
 <header id="blog">
 	<div class="content">
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-6">
 				<a href="#" class="logo">
-					<img src="img/logo.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="">
 				</a>
 				<div class="name">
 					<p>Маркетинговая компания</p>
@@ -41,7 +14,7 @@
 			<div class="col-md-8 col-sm-6 col-xs-6">
 				<h1 class="blog_title">Блог</h1>
 				<div class="speech_bubble">
-					<img src="img/speech.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/speech.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -55,6 +28,7 @@
 				<a href="#">История создания</a>
 				<a href="#">Полезная информация</a>
 				<a href="#">Еще одна интересная история</a>
+				<?php $tag = wp_tag_cloud('format=array' ); print_r($tag);?>
 			</div>
 		</div>
 	</div>
@@ -73,22 +47,23 @@
 			<div id="news_full">
 
 				<div class="col-md-8 col-sm-8" id="news_body">
-					<h1>Как получить из Facebook по 100 рублей в школу фигурного катагия - кейс Marketeam</h1>
+					<h1><?php the_title(); ?></h1>
 					<div class="news_body_img">
-						<img src="img/blog/news_body.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/img/blog/news_body.png" alt="">
 						<div class="bottom_statistics">
-							<span class="date"><i></i>08.16.2016</span>
+							<span class="date"><i></i><?php the_time('j F Y'); ?></span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
 						</div>
 					</div>
+					<div><?php the_content(); ?></div>	
 					<h3>Генеральный директор SendPulse Константин Макаров написал для «Нетологии» колонку, в которой подробно рассказал о push-уведомлениях для сайтов и как они помогают бизнесу.</h3>
 					<p>В 2015 году мир увидел новый канал общения с посетителями сайта – браузерные push-уведомления.</p>
 					<p>По своей сути — это короткие текстовые сообщения длинной до 200 знаков, которые появляются всплывающим окном в углу рабочего стола (правый нижний для Google Chrome, правый верхний для Apple Safari).</p>
-					<img src="img/blog/news_body_img1.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/blog/news_body_img1.png" alt="">
 					<p>По сравнению с уже привычными email-рассылками и СМС, push-уведомления имеют ряд преимуществ.</p>
 					<p>Быстрая подписка. На сайте появляется всплывающее окно, которое запрашивает разрешение на отправку уведомлений. Один клик — и подписка произошла.</p>
-					<img src="img/blog/news_body_img2.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/blog/news_body_img2.png" alt="">
 					<p><strong>Исключена возможность отправки спама.</strong>В момент подписки за пользователем сети закрепляется шифрованный код — токен, который зависит от типа устройства, с которого был переход на сайт, браузера и домена самого сайта. Скопировать такой код или перенести на другой проект технически невозможно. Подписчик получит информацию только от того сайта, в уведомлениях от которого он заинтересован.</p>
 					<p><strong>Высокий уровень просматриваемости.</strong>В отличии от email рассылок или SMS, которые еще нужно открыть, текст сообщения push-уведомления сразу появляется перед глазами. К тому же, воспринять информацию с него и сделать переход по ссылке гораздо проще, а значит и посещаемость сайта возрастет.</p>
 					<h2>Как использовать возможности push-уведомлений для продвижения проектов</h2>
@@ -116,15 +91,15 @@
 					</div>
 
 					<div id="fb_widget" class="widgets col-md-12 col-sm-12 col-xs-4">
-						<img src="img/blog/fb.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/img/blog/fb.png" alt="">
 					</div>
 
 					<div id="tw_widget" class="widgets col-md-12 col-sm-12 col-xs-4">
-						<img src="img/blog/tw.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/img/blog/tw.png" alt="">
 					</div>
 
 					<div id="vk_widget" class="widgets col-md-12 col-sm-12 col-xs-4">
-						<img src="img/blog/vk.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/img/blog/vk.png" alt="">
 					</div>
 
 				</div>
@@ -133,36 +108,4 @@
 		</div>
 	</div>
 </div>
-
-<footer>
-	<div class="col-md-12">
-		<div class="content">
-			<div class="row">
-				<div class="col-md-10 col-sm-10 col-xs-10 bottom-logo">
-					<h4>
-						<strong>«MINDPRO-GROUP»</strong> — 2016
-					</h4>
-				</div>
-				<div class="col-md-2 col-sm-2 col-xs-2 bottom-logo-create">
-					<a href="http://mindpro.kz">
-						<img src="img/create.png" alt="bottom-logo">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-	<!--[if lt IE 9]>
-	<script src="bower_components/html5shiv/es5-shim.min.js"></script>
-	<script src="bower_components/html5shiv/html5shiv.min.js"></script>
-	<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="bower_components/respond/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
-	<script src="js/common.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>

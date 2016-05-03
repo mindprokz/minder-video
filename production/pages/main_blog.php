@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"><![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="ru"><![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="ru"><![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"><!--<![endif]-->
-<!-- html manifest="app.cache" -->
-<head>
-
-	<meta charset="utf-8">
-
-	<title>Блог</title>
-	<meta name="description" content="">
-	<meta name="Keywords" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
-</head>
-<body>
-
 <header id="blog">
 	<div class="content">
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-6">
 				<a href="#" class="logo">
-					<img src="img/logo.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="">
 				</a>
 				<div class="name">
 					<p>Маркетинговая компания</p>
@@ -41,7 +13,7 @@
 			<div class="col-md-8 col-sm-6 col-xs-6">
 				<h1 class="blog_title">Блог</h1>
 				<div class="speech_bubble">
-					<img src="img/speech.png" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/speech.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -65,8 +37,8 @@
 		<div class="row">
 			<div class="col-md-7 col-sm-12">
 				<div class="slider">
-					<span class="favorite"><img src="img/blog/icons.png" alt="icons"> Лучшее за месяц</span>
-					<img src="img/blog/slider.png" alt="">
+					<span class="favorite"><img src="<?php echo get_template_directory_uri();?>/img/blog/icons.png" alt="icons"> Лучшее за месяц</span>
+					<img src="<?php echo get_template_directory_uri();?>/img/blog/slider.png" alt="">
 					<div id="controllers">
 						<svg class="controllers left">
 							<path d="M 27 0 l -25 20 l 32 26"></path>
@@ -84,7 +56,7 @@
 					<a href="#">
 						<div class="last_news_post">
 							<div class="img_wrapper">
-								<img src="img/blog/latest_news/1.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/1.png" alt="">
 							</div>
 							<p>Максимум полезности: как вести блог коммерческого сайта</p>
 						</div>
@@ -92,7 +64,7 @@
 					<a href="#">
 						<div class="last_news_post">
 							<div class="img_wrapper">
-								<img src="img/blog/latest_news/2.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/2.png" alt="">
 							</div>
 							<p>Что читать в январе: 12 книг о маркетинге, финансах и управлении собой</p>
 						</div>
@@ -100,7 +72,7 @@
 					<a href="#">
 						<div class="last_news_post">
 							<div class="img_wrapper">
-								<img src="img/blog/latest_news/3.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/3.png" alt="">
 							</div>
 							<p>9 цитат Стива Джобса о лидерстве</p>
 						</div>
@@ -113,7 +85,7 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/norton.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -124,7 +96,7 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/jobs.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -135,41 +107,7 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/mac.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="img/blog/news/norton.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="img/blog/news/jobs.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="img/blog/news/mac.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -181,7 +119,7 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/norton.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -192,7 +130,7 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/jobs.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -203,7 +141,41 @@
 				<div class="col-md-4 col-sm-6">
 					<a href="#">
 						<div class="news_block">
-							<img src="img/blog/news/mac.png" alt="news">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
+							<span class="date"><i></i>08.16.2016</span>
+							<span class="comments"><i></i>12</span>
+							<span class="views"><i></i>1300</span>
+							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="news_block">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
+							<span class="date"><i></i>08.16.2016</span>
+							<span class="comments"><i></i>12</span>
+							<span class="views"><i></i>1300</span>
+							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="news_block">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
+							<span class="date"><i></i>08.16.2016</span>
+							<span class="comments"><i></i>12</span>
+							<span class="views"><i></i>1300</span>
+							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="news_block">
+							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
 							<span class="date"><i></i>08.16.2016</span>
 							<span class="comments"><i></i>12</span>
 							<span class="views"><i></i>1300</span>
@@ -223,36 +195,3 @@
 		</div>
 	</div>
 </div>
-
-<footer>
-	<div class="col-md-12">
-		<div class="content">
-			<div class="row">
-				<div class="col-md-10 col-sm-10 col-xs-10 bottom-logo">
-					<h4>
-						<strong>«MINDPRO-GROUP»</strong> — 2016
-					</h4>
-				</div>
-				<div class="col-md-2 col-sm-2 col-xs-2 bottom-logo-create">
-					<a href="http://mindpro.kz">
-						<img src="img/create.png" alt="bottom-logo">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-	<!--[if lt IE 9]>
-	<script src="bower_components/html5shiv/es5-shim.min.js"></script>
-	<script src="bower_components/html5shiv/html5shiv.min.js"></script>
-	<script src="bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="bower_components/respond/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
-	<script src="js/common.js"></script>
-
-</body>
-</html>
