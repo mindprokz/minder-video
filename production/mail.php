@@ -1,6 +1,5 @@
-
 <?php
-$sendto   = "smanastas93@mail.ru"; // почта, на которую будет приходить письмо
+$sendto   = "hello@mindpro.kz"; // почта, на которую будет приходить письмо
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
@@ -24,15 +23,15 @@ $msg .= "</body></html>";
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
 	echo '<div class="message">
-			<img src="img/ok.png" alt="">
+			<img src="http://golden-city.kz/wp-content/themes/Golden_theme/img/ok.png" alt="">
 			<div class="message_text">
-				<h3>Спасибо за заявку'.$_POST['name'].'</h3>
+				<h3>Спасибо за заявку, '.$_POST['name'].'</h3>
 				<p>Мы свяжемся с вами в ближайшее время</p>
 			</div>
 		</div>';
 } else {
 	echo '<div class="message">
-			<img src="img/ok.png" alt="">
+			<img src="http://golden-city.kz/wp-content/themes/Golden_theme/img/er.png" alt="">
 			<div class="message_text">
 				<h3>Ошибка отправления</h3>
 				<p>Сообщение не было доставлено</p>

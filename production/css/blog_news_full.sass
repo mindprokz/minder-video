@@ -10,6 +10,7 @@
       margin: 40px auto
       img
         width: 100%
+        height: auto
       .bottom_statistics
         position: absolute
         width: 100%
@@ -19,6 +20,20 @@
         line-height: 3
         padding: 0 30px
         font-size: em(15)
+        .date, .comments, .views
+          i
+            display: inline-block
+            width: 20px
+            height: 20px
+            vertical-align: sub
+            background: url(../img/blog/news_icons.png) no-repeat
+            margin-right: 5px
+        .date i
+          background-position: 2px
+        .comments i
+          background-position: -16px
+        .views i
+          background-position: -34px        
         .comments, .views
           float: right
         .views

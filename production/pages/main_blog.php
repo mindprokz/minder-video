@@ -53,145 +53,75 @@
 			<div class="col-md-5 col-sm-12">
 				<div class="latest_news">
 					<h1>Последние посты</h1>
-					<a href="#">
-						<div class="last_news_post">
-							<div class="img_wrapper">
-								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/1.png" alt="">
-							</div>
-							<p>Максимум полезности: как вести блог коммерческого сайта</p>
-						</div>
-					</a>
-					<a href="#">
-						<div class="last_news_post">
-							<div class="img_wrapper">
-								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/2.png" alt="">
-							</div>
-							<p>Что читать в январе: 12 книг о маркетинге, финансах и управлении собой</p>
-						</div>
-					</a>
-					<a href="#">
-						<div class="last_news_post">
-							<div class="img_wrapper">
-								<img src="<?php echo get_template_directory_uri();?>/img/blog/latest_news/3.png" alt="">
-							</div>
-							<p>9 цитат Стива Джобса о лидерстве</p>
-						</div>
-					</a>
+					<?php
+							$args = array(
+								'post_type' => 'blog', //Типы посты
+								'posts_per_page' => 3, //Постов на одной странице
+								'category_name' => 'blog'); //Категория постов
+								//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
+							$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
+							if( $lastBlog->have_posts() ):
+								while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+									<!-- html template -->
+										<a href="<?php the_permalink(); ?>">
+											<div class="last_news_post">
+												<div class="img_wrapper">
+													<?php the_post_thumbnail('medium');?>
+												</div>
+												<p><?php the_title(); ?></p>
+											</div>
+										</a>	
+								<?php endwhile;  //Вывод всех подходящих постов
+							endif; 
+							wp_reset_postdata();
+					?>	
 				</div>
 			</div>
 			<div class="clear"></div>
 			<div id="news">
-
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/norton.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/jobs.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="#">
-						<div class="news_block">
-							<img src="<?php echo get_template_directory_uri();?>/img/blog/news/mac.png" alt="news">
-							<span class="date"><i></i>08.16.2016</span>
-							<span class="comments"><i></i>12</span>
-							<span class="views"><i></i>1300</span>
-							<p>Как получать из Facebook заявки по 100 рублей в школу фигурного катания — кейс Marketeam</p>
-						</div>
-					</a>
-				</div>
-
+				<?php
+				$args = array(
+					'post_type' => 'blog', //Типы посты
+					'posts_per_page' => 3, //Постов на одной странице
+					'category_name' => 'blog'); //Категория постов
+					//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
+				$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
+				if( $lastBlog->have_posts() ):
+					while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+					<!-- html template -->	
+					<div class="col-md-4 col-sm-6">
+						<a href="<?php the_permalink(); ?>">
+							<div class="news_block">
+								<div class="wrapper">
+									<?php the_post_thumbnail('full')?>
+								</div>		
+								<span class="date"><i></i><?php the_time('j F Y'); ?></span>
+								<span class="comments"><i></i>12</span>
+								<span class="views"><i></i><?php echo do_shortcode("[post-views]");?></span>
+								<p><?php the_title(); ?></p>
+							</div>
+						</a>
+					</div>					
+					<?php endwhile;  //Вывод всех подходящих постов
+				endif; 
+				wp_reset_postdata();
+				?>
 			</div>
 
+<!--
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div id="load_more">
 					<button>Загрузить еще</button>
 				</div>
 			</div>
+-->
 
 		</div>
 	</div>
 </div>
+<div id="mail" class="not_visible_mail"></div>	
+
+
+<!-- Local scripts -->
+<script src="<?php echo get_template_directory_uri();?>/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>	

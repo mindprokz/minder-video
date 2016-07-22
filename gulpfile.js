@@ -25,8 +25,8 @@ gulp.task('html',function(){
 });
 
 gulp.task('sass', function () {
-  return sass('production/css/style.sass')
-    .on('error', sass.logError)
+	gulp.src('production/css/style.sass')
+  	.pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 10 version'))
     .pipe(rename('production/style.css'))
     .pipe(gulp.dest('production/css'));

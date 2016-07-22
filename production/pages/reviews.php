@@ -18,149 +18,60 @@
 <div class="reviews clear">
 	<div class="content">
 		<h2><strong>Отзывы</strong> клиентов</h2>
-		<div class="review clear">
-			<div class="col-md-4 col-sm-12 clear">
-				<div class="reviews_video">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-					</a>
-					<h3>ТОО «Сантехпром»</h3>
-					<h4>Инна Владимировна</h4>
-					<p>Заместитель генерального директора</p>
-				</div>
-			</div>
-			<div class="col-md-8 col-sm-12 clear">
-				<div class="review-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem iusto natus, necessitatibus
-						neque quidem quos repellat repellendus unde vel. Aspernatur debitis fuga ipsum modi natus nobis
-						praesentium sapiente similique voluptatem. Aliquam aperiam at commodi corporis cupiditate delectus
-						dolore dolorum eligendi facilis harum illum inventore labore minus, modi molestiae nesciunt nisi
-						nobis numquam officia omnis porro quibusdam sapiente tempora temporibus, vel veniam veritatis?
-						Accusamus alias aliquid architecto beatae commodi eius ex id illo illum iste itaque labore
-						laudantium minus mollitia numquam officiis quasi quisquam quo ratione sunt temporibus tenetur totam
-						vero vitae, voluptate. Officia pariatur quae quisquam! Atque dignissimos dolore doloribus eos est
-						excepturi, hic illum inventore iste mollitia odit quia quisquam ratione, saepe sapiente sint
-						voluptatem. Accusamus aliquid dolore dolorem ducimus, error ex excepturi facere facilis illo in
-						incidunt ipsum laborum, maiores molestiae natus nihil nostrum nulla obcaecati placeat provident quia
-						quis quo quos repellat saepe vel veniam voluptatibus.</p>
-					<p class="link_label">Сайт</p>
-					<a href="#">http://sitelinkkz.com</a>
-					<p class="link_label">Видео</p>
-					<a href="#">Презентация ювелирных украшений  </a>
-				</div>
-			</div>
-		</div>
-		<div class="review clear">
-			<div class="col-md-4 col-sm-12 clear">
-				<div class="reviews_video">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-					</a>
-					<h3>ТОО «Сантехпром»</h3>
-					<h4>Инна Владимировна</h4>
-					<p>Заместитель генерального директора</p>
-				</div>
-			</div>
-			<div class="col-md-8 col-sm-12 clear">
-				<div class="review-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem iusto natus, necessitatibus
-						neque quidem quos repellat repellendus unde vel. Aspernatur debitis fuga ipsum modi natus nobis
-						praesentium sapiente similique voluptatem. Aliquam aperiam at commodi corporis cupiditate delectus
-						dolore dolorum eligendi facilis harum illum inventore labore minus, modi molestiae nesciunt nisi
-						nobis numquam officia omnis porro quibusdam sapiente tempora temporibus, vel veniam veritatis?
-						Accusamus alias aliquid architecto beatae commodi eius ex id illo illum iste itaque labore
-						laudantium minus mollitia numquam officiis quasi quisquam quo ratione sunt temporibus tenetur totam
-						vero vitae, voluptate. Officia pariatur quae quisquam! Atque dignissimos dolore doloribus eos est
-						excepturi, hic illum inventore iste mollitia odit quia quisquam ratione, saepe sapiente sint
-						voluptatem. Accusamus aliquid dolore dolorem ducimus, error ex excepturi facere facilis illo in
-						incidunt ipsum laborum, maiores molestiae natus nihil nostrum nulla obcaecati placeat provident quia
-						quis quo quos repellat saepe vel veniam voluptatibus.</p>
-					<p class="link_label">Сайт</p>
-					<a href="#">http://sitelinkkz.com</a>
-					<p class="link_label">Видео</p>
-					<a href="#">Презентация ювелирных украшений  </a>
-				</div>
-			</div>
-		</div>
-		<div class="review clear">
-			<div class="col-md-4 col-sm-12 clear">
-				<div class="reviews_video">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-					</a>
-					<h3>ТОО «Сантехпром»</h3>
-					<h4>Инна Владимировна</h4>
-					<p>Заместитель генерального директора</p>
-				</div>
-			</div>
-			<div class="col-md-8 col-sm-12 clear">
-				<div class="review-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem iusto natus, necessitatibus
-						neque quidem quos repellat repellendus unde vel. Aspernatur debitis fuga ipsum modi natus nobis
-						praesentium sapiente similique voluptatem. Aliquam aperiam at commodi corporis cupiditate delectus
-						dolore dolorum eligendi facilis harum illum inventore labore minus, modi molestiae nesciunt nisi
-						nobis numquam officia omnis porro quibusdam sapiente tempora temporibus, vel veniam veritatis?
-						Accusamus alias aliquid architecto beatae commodi eius ex id illo illum iste itaque labore
-						laudantium minus mollitia numquam officiis quasi quisquam quo ratione sunt temporibus tenetur totam
-						vero vitae, voluptate. Officia pariatur quae quisquam! Atque dignissimos dolore doloribus eos est
-						excepturi, hic illum inventore iste mollitia odit quia quisquam ratione, saepe sapiente sint
-						voluptatem. Accusamus aliquid dolore dolorem ducimus, error ex excepturi facere facilis illo in
-						incidunt ipsum laborum, maiores molestiae natus nihil nostrum nulla obcaecati placeat provident quia
-						quis quo quos repellat saepe vel veniam voluptatibus.</p>
-					<p class="link_label">Сайт</p>
-					<a href="#">http://sitelinkkz.com</a>
-					<p class="link_label">Видео</p>
-					<a href="#">Презентация ювелирных украшений  </a>
-				</div>
-			</div>
-		</div>
-		<div class="review clear">
-			<div class="col-md-4 col-sm-12 clear">
-				<div class="reviews_video">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-						<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-					</a>
-					<h3>ТОО «Сантехпром»</h3>
-					<h4>Инна Владимировна</h4>
-					<p>Заместитель генерального директора</p>
-				</div>
-			</div>
-			<div class="col-md-8 col-sm-12 clear">
-				<div class="review-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem iusto natus, necessitatibus
-						neque quidem quos repellat repellendus unde vel. Aspernatur debitis fuga ipsum modi natus nobis
-						praesentium sapiente similique voluptatem. Aliquam aperiam at commodi corporis cupiditate delectus
-						dolore dolorum eligendi facilis harum illum inventore labore minus, modi molestiae nesciunt nisi
-						nobis numquam officia omnis porro quibusdam sapiente tempora temporibus, vel veniam veritatis?
-						Accusamus alias aliquid architecto beatae commodi eius ex id illo illum iste itaque labore
-						laudantium minus mollitia numquam officiis quasi quisquam quo ratione sunt temporibus tenetur totam
-						vero vitae, voluptate. Officia pariatur quae quisquam! Atque dignissimos dolore doloribus eos est
-						excepturi, hic illum inventore iste mollitia odit quia quisquam ratione, saepe sapiente sint
-						voluptatem. Accusamus aliquid dolore dolorem ducimus, error ex excepturi facere facilis illo in
-						incidunt ipsum laborum, maiores molestiae natus nihil nostrum nulla obcaecati placeat provident quia
-						quis quo quos repellat saepe vel veniam voluptatibus.</p>
-					<p class="link_label">Сайт</p>
-					<a href="#">http://sitelinkkz.com</a>
-					<p class="link_label">Видео</p>
-					<a href="#">Презентация ювелирных украшений  </a>
-				</div>
-			</div>
-		</div>
+			<?php
+			$args = array(	
+				'post_type' => 'video_com', //Типы посты
+				'posts_per_page' => 10, //Постов на одной странице
+				'category_name' => 'comment'); //Категория постов
+				//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
+			$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
+			if( $lastBlog->have_posts() ):
+				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+				<!-- html template -->
+					<div class="review clear">
+						<div class="col-md-4 col-sm-12 clear">
+							<div class="reviews_video">
+								<a href="<?php echo(types_render_field( "comment_url", array('raw' => true) )); ?>" class="fancybox fancybox.iframe">
+									<?php the_post_thumbnail('full'); ?>
+<!-- 									<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster"> -->
+									<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
+								</a>
+								<h3><?php echo(types_render_field( "name_company", array('raw' => true) )); ?></h3>
+								<h4><?php echo(types_render_field( "name_peop", array('raw' => true) )); ?></h4>
+								<p><?php echo(types_render_field( "proffession", array('raw' => true) )); ?></p>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-12 clear">
+							<div class="review-text">
+								<p><?php the_content();?></p>
+								<p class="link_label">Сайт</p>
+								<a href="<?php echo(types_render_field( "url_site", array('raw' => true) )); ?>"><?php echo(types_render_field( "url_site", array('raw' => true) )); ?></a>
+								<p class="link_label">Видео</p>
+								<a href="<?php echo(types_render_field( "video_url", array('raw' => true) )); ?>" class="fancybox fancybox.iframe"><?php echo(types_render_field( "video_header", array('raw' => true) )); ?></a>
+							</div>
+						</div>
+					</div>				
+				<?php endwhile;  //Вывод всех подходящих постов
+			endif; 
+			wp_reset_postdata();
+    	?>
 	</div>
 </div>
 
 <div class="form_section">
 	<h3><strong>Заказать</strong> бесплатную консультацию</h3>
-	<form action="" method="POST">
+	<form id="application" action="mail.php" method="POST">
 		<div class="content">
-			<input type="text" placeholder="Ваше имя" name="name" required="">
-			<input type="text" placeholder="Телефон" name="email" required="">
-			<input type="text" placeholder="E-mail" name="telephone" required="">
+			<input type="text" placeholder="Ваше имя" name="name" required>
+			<input type="text" placeholder="Телефон" name="email" required>
+			<input type="text" placeholder="E-mail" name="telephone" required>
 			<button>Отправить</button>
 		</div>
 	</form>
 </div>
+<div id="mail" class="not_visible_mail"></div>	
+
+
+<!-- Local scripts -->
+<script src="<?php echo get_template_directory_uri();?>/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>	

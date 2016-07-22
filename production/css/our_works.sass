@@ -17,10 +17,6 @@
           margin-top: 5px
           &:hover
             border-color: $primary
-          &:first-child
-            position: absolute
-            top: 35%
-            left: -8%
           a
             display: inline-block
             font-size: em(16)
@@ -68,25 +64,35 @@
   +clear
   [class*="col"]
     padding: 0
+  .content
+    padding-left: 0	
+    padding-right: 0	  
   .work_block
     position: relative
     overflow: hidden
     margin: 15px
     height: 0
-    img
-      height: 100%
-      width: 100%
+    img:not([class="play"])
+      height: auto
+      min-width: 100%
+      max-width: 100%
       position: absolute
-      left: 0
-      top: 0
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+    img.play
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
     &.big
-      height: 495px	
+      height: 359px	
       .hover_eff
         h3
           font-size: em(24)
           margin-top: -20px
     &.small
-      height: 233px	
+      height: 164px	
       .hover_eff
         h3
           font-size: em(16)

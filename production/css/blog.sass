@@ -102,11 +102,22 @@ header#blog
         margin-bottom: 25px
       .img_wrapper
         display: inline-block
+        width: 177px	
+        height: 77px	
+        position: relative
+        overflow: hidden
         img
-          width: 100%
+          min-width: 100%
+          min-height: 100%
+          max-width: 120%
+          height: auto
+          position: absolute	
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
       p
         font-family: "RobotoLight", sans-serif
-        width: 70%
+        width: 60%
         float: right
         margin: 0
         color: #393939
@@ -121,9 +132,21 @@ header#blog
       border-radius: 5px
       border: 1px solid #e6e6e6
       margin-bottom: 20px
-      img[alt="news"]
+      .wrapper
+        width: 376px
+        height: 220px
+        overflow: hidden
+        position: relative
+        margin-bottom: 10px	
+      img
         margin-bottom: 15px
-        width: 100%
+        min-width: 100%
+        max-width: 140%
+        height: auto
+        position: absolute	
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
       .date, .comments, .views
         color: #a7a7a7
         font-size: em(15)
@@ -243,5 +266,6 @@ header#blog
           border: 2px solid lighten($primary, 30%)
         &:hover
           border: 2px solid lighten($primary, 30%)
-
+.entry-meta
+  float: right
 @import "blog_news_full"

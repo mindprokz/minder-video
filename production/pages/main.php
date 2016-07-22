@@ -19,17 +19,20 @@
 	<div class="content">
 		<div class="col-md-6 col-sm-6">
 			<ul>
-				<li><a href="#">Рекламные ролики для ТВ</a></li>
-				<li><a href="#">Презентационные фильмы о компании</a></li>
-				<li><a href="#">Продающие видео (продуктов и услуг)</a></li>
-				<li><a href="#">Видео для <span>Instagram</span></a></li>
-				<li><a href="#">Видео для SMM</a></li>
-				<li><a href="#">Видео отзывы</a></li>
+				<li><a href="http://mindpro-video.kz/works/#short">Рекламные ролики для ТВ</a></li>
+				<li><a href="http://mindpro-video.kz/works/#long">Презентационные фильмы о компании</a></li>
+				<li><a href="http://mindpro-video.kz/works/#sale">Продающие видео (продуктов и услуг)</a></li>
+				<li><a href="http://mindpro-video.kz/works/#insta">Видео для <span>Instagram</span></a></li>
+				<li><a href="http://mindpro-video.kz/works/#smm">Видео для SMM</a></li>
+				<li><a href="http://mindpro-video.kz/reviews/">Видео отзывы</a></li>
 			</ul>
 		</div>
 		<div class="col-md-6 col-sm-6">
 			<div class="video">
-				<img src="<?php echo get_template_directory_uri();?>/img/video.png" alt="">
+				<a href="https://www.youtube.com/embed/n788MNtJifg?autoplay=1" class="fancybox fancybox.iframe">
+					<img src="http://mindpro-group.com/img/place.jpg" alt="video">
+					<img src="http://mindpro-video.kz/wp-content/themes/mindpro_video_theme/img/play_button.png" class="play">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -39,11 +42,11 @@
 
 <div class="form_section">
 	<h3><strong>Заказать</strong> бесплатную консультацию</h3>
-	<form action="" method="POST">
+	<form id="application" action="mail.php" method="POST">
 		<div class="content">
-			<input type="text" placeholder="Ваше имя" name="name" required="">
-			<input type="text" placeholder="Телефон" name="email" required="">
-			<input type="text" placeholder="E-mail" name="telephone" required="">
+			<input type="text" placeholder="Ваше имя" name="name" required>
+			<input type="text" placeholder="Телефон" name="email" required>
+			<input type="text" placeholder="E-mail" name="telephone" required>
 			<button>Отправить</button>
 		</div>
 	</form>
@@ -57,7 +60,7 @@
 				<div class="section clear">
 					<div class="title">
 						<h3>30 секундные ролики для ТВ</h3>
-						<a href="#">Смотреть все ролики раздела</a>
+						<a href="http://mindpro-video.kz/works/#short">Смотреть все ролики раздела</a>
 					</div>
 				<?php
 					$args = array(
@@ -71,7 +74,7 @@
 <!-- html template -->
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="work_video">
-									<a href="<?php echo(types_render_field( "url", array('raw' => true) )); ?>">
+									<a href="<?php echo(types_render_field( "url", array('raw' => true) )); ?>" class="fancybox fancybox.iframe">
 										<? the_post_thumbnail('medium'); ?>
 										<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 									</a>
@@ -87,7 +90,7 @@
 			<div class="section clear">
 				<div class="title">
 					<h3>Презентационные фильмы о компании</h3>
-					<a href="#">Смотреть все ролики раздела</a>
+					<a href="http://mindpro-video.kz/works/#long">Смотреть все ролики раздела</a>
 				</div>
 				<?php
 					$args = array(
@@ -101,7 +104,7 @@
 <!-- html template -->
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="work_video">
-									<a href="<?php echo(types_render_field( "url", array('raw' => true) )); ?>">
+									<a href="<?php echo(types_render_field( "url", array('raw' => true) )); ?>" class="fancybox fancybox.iframe">
 										<? the_post_thumbnail('medium'); ?>
 										<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 									</a>
@@ -124,8 +127,8 @@
 			<div class="row">
 				<?php
 					$args = array(
-						'post_type' => 'comment', //Типы посты
-						'posts_per_page' => 4, //Постов на одной странице
+						'post_type' => 'video_com', //Типы посты
+						'posts_per_page' => 6, //Постов на одной странице
 						'category_name' => 'comment'); //Категория постов
 						//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
 					$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
@@ -134,7 +137,7 @@
 <!-- html template -->
 							<div class="col-md-4 col-sm-6 col-xs-6">
 								<div class="reviews_video">
-									<a href="#">
+									<a href="<?php echo(types_render_field( "comment_url", array('raw' => true) )); ?>" class="fancybox fancybox.iframe">
 										<? the_post_thumbnail('medium'); ?>
 										<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
 									</a>
@@ -147,64 +150,13 @@
 					endif; 
 					wp_reset_postdata();
     		?>
-				<!--
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="reviews_video">
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-							<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-						</a>
-						<h3>ТОО «Сантехпром»</h3>
-						<h4>Инна Владимировна</h4>
-						<p>Заместитель генерального директора</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="reviews_video">
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-							<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-						</a>
-						<h3>ТОО «Сантехпром»</h3>
-						<h4>Инна Владимировна</h4>
-						<p>Заместитель генерального директора</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="reviews_video">
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-							<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-						</a>
-						<h3>ТОО «Сантехпром»</h3>
-						<h4>Инна Владимировна</h4>
-						<p>Заместитель генерального директора</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="reviews_video">
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-							<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-						</a>
-						<h3>ТОО «Сантехпром»</h3>
-						<h4>Инна Владимировна</h4>
-						<p>Заместитель генерального директора</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
-					<div class="reviews_video">
-						<a href="#">
-							<img src="<?php echo get_template_directory_uri();?>/img/reciews_video.png" alt="poster">
-							<img src="<?php echo get_template_directory_uri();?>/img/play_button.png" alt="play">
-						</a>
-						<h3>ТОО «Сантехпром»</h3>
-						<h4>Инна Владимировна</h4>
-						<p>Заместитель генерального директора</p>
-					</div>
-				</div>
--->
 			</div>
 		</div>
 	</div>
 </div>
+<div id="mail" class="not_visible_mail"></div>	
+
+
+<!-- Local scripts -->
+<script src="<?php echo get_template_directory_uri();?>/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>	
