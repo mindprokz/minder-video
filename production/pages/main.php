@@ -66,7 +66,7 @@
 					$args = array(
 						'post_type' => 'video', //Типы посты
 						'posts_per_page' => 4, //Постов на одной странице
-						'category_name' => 'short'); //Категория постов
+						'category_name' => 'shorting'); //Категория постов
 						//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
 					$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
 					if( $lastBlog->have_posts() ):
@@ -82,9 +82,9 @@
 								</div>
 							</div>
 						<?php endwhile;  //Вывод всех подходящих постов
-					endif; 
+					endif;
 					wp_reset_postdata();
-    		?>			
+    		?>
     	</div>
 
 			<div class="section clear">
@@ -96,7 +96,7 @@
 					$args = array(
 						'post_type' => 'video', //Типы посты
 						'posts_per_page' => 4, //Постов на одной странице
-						'category_name' => 'long'); //Категория постов
+						'category_name' => 'longing'); //Категория постов
 						//'offset' => 1,); //Публикация постов начнется начиная со 2-ого поста
 					$lastBlog = new WP_Query($args);//Запрос ко всем постам подходящим под массив #args
 					if( $lastBlog->have_posts() ):
@@ -112,9 +112,9 @@
 								</div>
 							</div>
 						<?php endwhile;  //Вывод всех подходящих постов
-					endif; 
+					endif;
 					wp_reset_postdata();
-    		?>	
+    		?>
  			</div>
 		</div>
 	</div>
@@ -147,16 +147,16 @@
 								</div>
 							</div>
 						<?php endwhile;  //Вывод всех подходящих постов
-					endif; 
+					endif;
 					wp_reset_postdata();
     		?>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="mail" class="not_visible_mail"></div>	
+<div id="mail" class="not_visible_mail"></div>
 
 
 <!-- Local scripts -->
 <script src="<?php echo get_template_directory_uri();?>/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
-<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>	
+<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>
