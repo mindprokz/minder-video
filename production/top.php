@@ -30,7 +30,6 @@
             integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 <body <?php body_class(); ?>>
-
 <div id="header">
     <nav>
         <div class="content">
@@ -72,10 +71,10 @@
                         }
                         switch ($_GET['source']) {
                             case 'yandex':
-                                $phone = '+7 7172 <strong>62 02 18</strong>';
+                                $phone = '+7 778 <strong>021 87 85</strong>';
                                 break;
                             case 'google':
-                                $phone = '+7 7172 <strong>62 02 19</strong>';
+                                $phone = '+7 775 <strong>020 45 45</strong>';
                                 break;
                             default:
                                 $phone = '+7 702 <strong>808 80 08</strong>';
